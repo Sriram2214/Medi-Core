@@ -1,0 +1,163 @@
+/* GovernmentSchemes.css */
+
+.schemes-page {
+  padding-bottom: 6rem;
+}
+
+.schemes-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, rgba(14,165,233,0.05) 0%, rgba(37,99,235,0.05) 100%);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.dark .schemes-hero {
+  background: linear-gradient(135deg, rgba(14,165,233,0.1) 0%, rgba(37,99,235,0.05) 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.search-bar-wrapper {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  position: relative;
+}
+
+.schemes-search {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.schemes-search:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 20px rgba(14,165,233,0.2);
+}
+
+.schemes-container {
+  padding: 4rem 0;
+}
+
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.scheme-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 100%;
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.scheme-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.scheme-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+  color: #0f766e;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.dark .scheme-icon-wrapper {
+  background: linear-gradient(135deg, rgba(20,184,166,0.2), rgba(20,184,166,0.1));
+  color: #5eead4;
+}
+
+.scheme-title {
+  font-size: 1.25rem;
+  color: var(--heading-color);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.scheme-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.scheme-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.scheme-feature {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.scheme-card-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(0,0,0,0.02);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px dashed var(--border-color);
+}
+
+.dark .scheme-card-footer {
+  background: rgba(255,255,255,0.02);
+}
+
+.apply-info {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+.apply-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .schemes-grid {
+    grid-template-columns: 1fr;
+  }
+}

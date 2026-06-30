@@ -1,0 +1,1032 @@
+[
+  {
+    "Scheme Name": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+    "Launched By / Year": "TN Govt, 2009 (as Kalaignar Kaappittu Thittam); current run via United India Insurance till 2027",
+    "What It Covers": "Cashless treatment: 1090 procedures, 8 follow-up procedures, 52 diagnostic tests across ~800 govt + 900 private empanelled hospitals",
+    "Eligibility": "TN resident family, annual income below Rs.1,20,000, name on family/ration card",
+    "Coverage Amount / Benefit": "Up to Rs.5,00,000 per family per year (floater basis)",
+    "How to Apply": "Apply online at cmchistn.com with ration card, Aadhaar, income certificate",
+    "Official Source / Helpline": "cmchistn.com | Toll-free 1800-425-3993",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Nammai Kaakkum 48 (NK-48)",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free emergency treatment for road accident victims within first 48 hours of accident, at any hospital (govt or private)",
+    "Eligibility": "Any road accident victim in Tamil Nadu, regardless of insurance status",
+    "Coverage Amount / Benefit": "Free treatment for first 48 hours post-accident",
+    "How to Apply": "Automatic on admission to empanelled hospital after accident",
+    "Official Source / Helpline": "TN Health & Family Welfare Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Financial assistance to pregnant women for nutrition and delivery expenses",
+    "Eligibility": "Pregnant women (especially first 2 deliveries), TN resident",
+    "Coverage Amount / Benefit": "Cash assistance in installments (amount revised periodically)",
+    "How to Apply": "Apply through nearest Govt hospital / PHC / Anganwadi",
+    "Official Source / Helpline": "TN Dept of Health & Family Welfare",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Amma Mini Clinics (Amma Clinics)",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free outpatient consultation, basic diagnostics, free medicines for common ailments at urban primary health level",
+    "Eligibility": "All residents, especially urban poor",
+    "Coverage Amount / Benefit": "Free OP consultation + medicines",
+    "How to Apply": "Walk-in at Amma Clinic locations in urban areas",
+    "Official Source / Helpline": "TN Health Dept / Greater Chennai Corporation",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Makkalai Thedi Maruthuvam (Doorstep Healthcare Scheme)",
+    "Launched By / Year": "TN Govt, 2021",
+    "What It Covers": "Doorstep screening for non-communicable diseases (diabetes, hypertension) and medicine delivery for elderly/bedridden",
+    "Eligibility": "Elderly, bedridden, and chronic disease patients in rural/semi-urban areas",
+    "Coverage Amount / Benefit": "Free home-based screening and medicine delivery",
+    "How to Apply": "Through local Health Sub-Centre / village health nurse visits",
+    "Official Source / Helpline": "TN Health & Family Welfare Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Patham Pathukappom Thittam",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Preventing diabetic foot complications through screening and footcare for diabetic patients",
+    "Eligibility": "Diabetic patients registered under TN public health system",
+    "Coverage Amount / Benefit": "Free foot screening and preventive care",
+    "How to Apply": "Through Govt hospitals / NCD clinics",
+    "Official Source / Helpline": "TN NHM / Health Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "National Dialysis Programme (TN component)",
+    "Launched By / Year": "TN Govt + GoI, PPP model",
+    "What It Covers": "Subsidised/free hemodialysis and peritoneal dialysis for End Stage Renal Disease (ESRD) patients at District Hospitals",
+    "Eligibility": "ESRD patients, priority to BPL/CMCHIS-eligible patients",
+    "Coverage Amount / Benefit": "Free or highly subsidised dialysis sessions at District Hospital dialysis centres",
+    "How to Apply": "Register at District Hospital dialysis centre",
+    "Official Source / Helpline": "nhm.tn.gov.in",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Pudhumai Penn Thittam",
+    "Launched By / Year": "TN Govt, 2021",
+    "What It Covers": "Monthly financial assistance to girl students from govt schools to continue education up to graduation (indirectly improves health/nutrition access)",
+    "Eligibility": "Girl students who studied in TN govt schools from class 6 to 12, joining govt UG colleges",
+    "Coverage Amount / Benefit": "Rs.1,000/month during course of study",
+    "How to Apply": "Apply through college / TN e-Governance portal",
+    "Official Source / Helpline": "TN Higher Education Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Naan Mudhalvan Thittam",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Skill development and employability scheme for students/youth (includes health & paramedical skilling tracks)",
+    "Eligibility": "TN college students and youth",
+    "Coverage Amount / Benefit": "Free skill training, certification, job linkage",
+    "How to Apply": "Register on naanmudhalvan.tn.gov.in",
+    "Official Source / Helpline": "naanmudhalvan.tn.gov.in",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Chief Minister's Breakfast Scheme",
+    "Launched By / Year": "TN Govt, 2022",
+    "What It Covers": "Free nutritious breakfast for govt school children to improve child nutrition and health outcomes",
+    "Eligibility": "Children studying in TN govt primary schools",
+    "Coverage Amount / Benefit": "Free daily breakfast",
+    "How to Apply": "Automatic for enrolled govt school students",
+    "Official Source / Helpline": "TN School Education Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "108 Ambulance Service (TN)",
+    "Launched By / Year": "TN Govt (GVK EMRI)",
+    "What It Covers": "Free emergency ambulance response and transport to nearest hospital",
+    "Eligibility": "All TN residents, any emergency",
+    "Coverage Amount / Benefit": "Free ambulance pickup and transport",
+    "How to Apply": "Call 108",
+    "Official Source / Helpline": "TN Health Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "TN Chief Minister's Multi Super Speciality Hospital Free Treatment",
+    "Launched By / Year": "TN Govt, Omandurar Govt Estate, Chennai",
+    "What It Covers": "Free advanced multi-speciality treatment including cardiology, neurology, oncology",
+    "Eligibility": "All patients, priority to economically weaker sections",
+    "Coverage Amount / Benefit": "Free / highly subsidised tertiary care",
+    "How to Apply": "Walk-in / referral from district hospital",
+    "Official Source / Helpline": "tngmssh.tn.gov.in",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Innuyir Kappom Thittam",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free medical treatment to road accident victims, precursor/companion scheme to NK-48 covering wider trauma care",
+    "Eligibility": "Road accident victims in Tamil Nadu",
+    "Coverage Amount / Benefit": "Free trauma treatment at network hospitals",
+    "How to Apply": "Automatic on hospital admission post-accident",
+    "Official Source / Helpline": "TN Health & Family Welfare Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Prevention & Control of Haemoglobinopathies Programme (Sickle Cell & Thalassemia Screening)",
+    "Launched By / Year": "TN Govt, since 2017, first South Indian state",
+    "What It Covers": "Screening for Sickle Cell Anaemia & Thalassemia among tribal adolescents (class 10/12) and antenatal mothers in 30 tribal blocks across 14 districts",
+    "Eligibility": "Tribal students aged 14+, school dropouts, antenatal mothers in tribal blocks",
+    "Coverage Amount / Benefit": "Free screening and counselling",
+    "How to Apply": "Through school health screening camps / PHC in tribal blocks",
+    "Official Source / Helpline": "nhm.tn.gov.in",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu School Dental Health Programme",
+    "Launched By / Year": "TN Govt, School Health Programme",
+    "What It Covers": "Free dental check-up and basic treatment for school children",
+    "Eligibility": "Children in TN govt and govt-aided schools",
+    "Coverage Amount / Benefit": "Free dental screening and treatment",
+    "How to Apply": "Through school health camps",
+    "Official Source / Helpline": "TN School Education / Health Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Government Free Spectacles Scheme",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free spectacles for school children identified with refractive errors during eye screening",
+    "Eligibility": "School children in govt schools with vision problems",
+    "Coverage Amount / Benefit": "Free spectacles",
+    "How to Apply": "Through school eye screening camp",
+    "Official Source / Helpline": "TN Health Dept / NPCB&VI",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Marriage Assistance & Health Card for Widows",
+    "Launched By / Year": "TN Govt, Social Welfare Dept",
+    "What It Covers": "Health and financial support benefits bundled with welfare assistance for widows",
+    "Eligibility": "Widows registered under TN Social Welfare schemes",
+    "Coverage Amount / Benefit": "Cash assistance + access to govt health facilities",
+    "How to Apply": "Apply at Taluk Social Welfare Office",
+    "Official Source / Helpline": "TN Social Welfare Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "TN Free Cancer Treatment Scheme (Govt Cancer Institute, Chennai)",
+    "Launched By / Year": "TN Govt, Govt Royapettah / Adyar Cancer Institute",
+    "What It Covers": "Free/subsidised cancer diagnosis, chemotherapy, radiotherapy, and surgery",
+    "Eligibility": "All cancer patients, priority to CMCHIS/BPL cardholders",
+    "Coverage Amount / Benefit": "Free to highly subsidised cancer treatment",
+    "How to Apply": "Referral or direct walk-in to Cancer Institute, Adyar, Chennai",
+    "Official Source / Helpline": "cancerinstitutewia.in",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Free Heart Surgery Scheme (Govt Multi-Speciality / Institute of Cardiology)",
+    "Launched By / Year": "TN Govt, Madras Medical College / Govt General Hospital Chennai",
+    "What It Covers": "Free or subsidised cardiac surgeries including bypass, valve replacement",
+    "Eligibility": "CMCHIS-eligible patients and walk-in referrals",
+    "Coverage Amount / Benefit": "Covered under CMCHIS / free at Govt Institute of Cardiology",
+    "How to Apply": "Referral from district hospital to Institute of Cardiology, Chennai",
+    "Official Source / Helpline": "TN Health Dept",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Anaemia Mukt Bharat (TN implementation)",
+    "Launched By / Year": "GoI + TN, since 2018",
+    "What It Covers": "Anaemia testing & treatment, Iron-Folic Acid supplementation for children, adolescents, pregnant women, biannual deworming",
+    "Eligibility": "Children 1-19 yrs, pregnant/lactating women, adolescents",
+    "Coverage Amount / Benefit": "Free IFA tablets/syrup, free deworming tablets",
+    "How to Apply": "Through Anganwadi Centre / School Health Programme",
+    "Official Source / Helpline": "nhm.tn.gov.in",
+    "Category": "TN State Schemes"
+  },
+  {
+    "Scheme Name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+    "Launched By / Year": "Govt of India, 2018",
+    "What It Covers": "Cashless secondary & tertiary hospitalization care across empanelled govt + private hospitals nationwide",
+    "Eligibility": "Families identified per SECC 2011 deprivation criteria (mainly rural/urban poor); TN runs CMCHIS as its equivalent/converged scheme",
+    "Coverage Amount / Benefit": "Up to Rs.5,00,000 per family per year",
+    "How to Apply": "Check eligibility on pmjay.gov.in or via Common Service Centres",
+    "Official Source / Helpline": "pmjay.gov.in | Helpline 14555",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Ayushman Bharat Health and Wellness Centres (AB-HWC) / Ayushman Arogya Mandir",
+    "Launched By / Year": "Govt of India",
+    "What It Covers": "Comprehensive primary healthcare incl. NCD screening, maternal & child health, free diagnostics and medicines at sub-centre/PHC level",
+    "Eligibility": "All residents in catchment area of the centre",
+    "Coverage Amount / Benefit": "Free OP consultation, free essential drugs & diagnostics",
+    "How to Apply": "Walk-in at nearest Health & Wellness Centre",
+    "Official Source / Helpline": "ab-hwc.nhp.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Pradhan Mantri National Dialysis Programme (PMNDP)",
+    "Launched By / Year": "Govt of India, Ministry of Health & Family Welfare",
+    "What It Covers": "Free dialysis services for poor patients with End Stage Renal Disease at District Hospitals (PPP model)",
+    "Eligibility": "BPL and economically weak ESRD patients (priority); implemented state-wise including TN",
+    "Coverage Amount / Benefit": "Free hemodialysis/peritoneal dialysis sessions",
+    "How to Apply": "Register at District Hospital dialysis unit",
+    "Official Source / Helpline": "pmndp.mohfw.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Janani Suraksha Yojana (JSY)",
+    "Launched By / Year": "Govt of India, 2005, under NHM",
+    "What It Covers": "Cash assistance for institutional delivery to reduce maternal & neonatal mortality",
+    "Eligibility": "Pregnant women, especially BPL/SC/ST, delivering in govt or accredited private facilities",
+    "Coverage Amount / Benefit": "Cash incentive (varies rural/urban, amount per state norms)",
+    "How to Apply": "Apply through ASHA worker / Govt hospital at time of delivery",
+    "Official Source / Helpline": "nhm.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Janani Shishu Suraksha Karyakram (JSSK)",
+    "Launched By / Year": "Govt of India, under NHM",
+    "What It Covers": "Free delivery (incl. C-section) and free treatment for sick newborns, with free drugs, diagnostics, diet, transport",
+    "Eligibility": "All pregnant women and sick infants up to 1 year, in public health facilities",
+    "Coverage Amount / Benefit": "Completely free maternal and newborn care package",
+    "How to Apply": "Through Govt hospital at time of admission",
+    "Official Source / Helpline": "nhm.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Rashtriya Bal Swasthya Karyakram (RBSK)",
+    "Launched By / Year": "Govt of India, under NHM",
+    "What It Covers": "Child health screening (4 D's: Defects, Diseases, Deficiencies, Developmental delays) and free treatment/surgery referral",
+    "Eligibility": "Children aged 0-18 years",
+    "Coverage Amount / Benefit": "Free screening + free treatment/surgery for identified conditions",
+    "How to Apply": "Through Anganwadi/school health screening camps",
+    "Official Source / Helpline": "nhm.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Rashtriya Arogya Nidhi (RAN)",
+    "Launched By / Year": "Govt of India, Ministry of Health & Family Welfare",
+    "What It Covers": "Financial assistance to BPL patients for treatment of life-threatening diseases (cancer, heart disease, kidney etc.) at govt hospitals",
+    "Eligibility": "BPL families needing treatment at listed govt super-speciality hospitals",
+    "Coverage Amount / Benefit": "Financial assistance up to Rs.15 lakh (case basis)",
+    "How to Apply": "Apply through Medical Superintendent of treating govt hospital",
+    "Official Source / Helpline": "main.mohfw.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Health Minister's Discretionary Grant (HMDG)",
+    "Launched By / Year": "Govt of India, Ministry of Health & Family Welfare",
+    "What It Covers": "One-time financial grant to economically poor patients for hospitalization expenses",
+    "Eligibility": "Indian citizens below poverty line needing urgent treatment",
+    "Coverage Amount / Benefit": "Discretionary grant amount (case-by-case)",
+    "How to Apply": "Apply through Ministry of Health & Family Welfare",
+    "Official Source / Helpline": "mohfw.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "National Tobacco Control Programme (NTCP)",
+    "Launched By / Year": "Govt of India, 2007-08",
+    "What It Covers": "Awareness, cessation support and de-addiction services for tobacco users",
+    "Eligibility": "All residents, esp. tobacco users seeking de-addiction help",
+    "Coverage Amount / Benefit": "Free counselling and cessation support at District Tobacco Cessation Centres",
+    "How to Apply": "Visit District Hospital NTCP cessation centre",
+    "Official Source / Helpline": "nhm.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Pradhan Mantri Surakshit Matritva Abhiyan (PMSMA)",
+    "Launched By / Year": "Govt of India, 2016",
+    "What It Covers": "Free, fixed-day antenatal checkups (incl. high-risk pregnancy identification) by specialists",
+    "Eligibility": "All pregnant women, free for high-risk cases",
+    "Coverage Amount / Benefit": "Free antenatal checkup on 9th of every month at PHC/CHC",
+    "How to Apply": "Visit PHC/CHC on PMSMA day (9th of month)",
+    "Official Source / Helpline": "pmsma.nhp.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Pradhan Mantri Bhartiya Janaushadhi Pariyojana (PMBJP)",
+    "Launched By / Year": "Govt of India",
+    "What It Covers": "Affordable generic medicines through Jan Aushadhi Kendras",
+    "Eligibility": "All citizens",
+    "Coverage Amount / Benefit": "Medicines at 50-90% lower cost than branded equivalents",
+    "How to Apply": "Purchase at nearest Jan Aushadhi Kendra",
+    "Official Source / Helpline": "janaushadhi.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "Launched By / Year": "Govt of India, Ministry of Finance",
+    "What It Covers": "Accidental death and disability insurance",
+    "Eligibility": "Bank account holders, age 18-70",
+    "Coverage Amount / Benefit": "Rs.2,00,000 for accidental death/full disability, Rs.20/year premium",
+    "How to Apply": "Apply through bank linked to Aadhaar/account",
+    "Official Source / Helpline": "jansuraksha.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "Launched By / Year": "Govt of India, Ministry of Finance",
+    "What It Covers": "Life insurance cover (any cause of death)",
+    "Eligibility": "Bank/post office account holders, age 18-50",
+    "Coverage Amount / Benefit": "Rs.2,00,000 life cover, premium ~Rs.436/year",
+    "How to Apply": "Apply through bank linked to Aadhaar/account",
+    "Official Source / Helpline": "jansuraksha.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Employees' State Insurance Scheme (ESIC)",
+    "Launched By / Year": "Govt of India, Ministry of Labour & Employment",
+    "What It Covers": "Comprehensive medical care, sickness, maternity & disability cash benefits for organised sector workers",
+    "Eligibility": "Employees earning up to wage ceiling in ESI-covered establishments",
+    "Coverage Amount / Benefit": "Free medical treatment at ESI hospitals/dispensaries + cash benefits",
+    "How to Apply": "Automatic enrolment via employer; ESIC card issued",
+    "Official Source / Helpline": "esic.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Central Government Health Scheme (CGHS)",
+    "Launched By / Year": "Govt of India, Ministry of Health & Family Welfare",
+    "What It Covers": "Comprehensive healthcare (OPD, IPD, diagnostics, medicines) for central govt employees & pensioners",
+    "Eligibility": "Serving/retired central government employees and dependents",
+    "Coverage Amount / Benefit": "Cashless treatment at CGHS wellness centres & empanelled hospitals",
+    "How to Apply": "Apply through CGHS card via employer/pension office",
+    "Official Source / Helpline": "cghs.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "PM-Ayushman Bharat Health Infrastructure Mission (PM-ABHIM)",
+    "Launched By / Year": "Govt of India, 2021",
+    "What It Covers": "Strengthening public health infrastructure - critical care blocks, diagnostic labs, public health units at district/block level",
+    "Eligibility": "General public (infrastructure-level scheme, indirect beneficiary)",
+    "Coverage Amount / Benefit": "Improved diagnostic and critical care facility access at Govt hospitals",
+    "How to Apply": "N/A - infrastructure scheme implemented via state health depts",
+    "Official Source / Helpline": "pmabhim.mohfw.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "Ayushman Bhav Campaign",
+    "Launched By / Year": "Govt of India",
+    "What It Covers": "Saturation drive to ensure every eligible citizen is covered under Ayushman Bharat schemes, health camps (Ayushman Melas)",
+    "Eligibility": "All eligible citizens not yet enrolled in PM-JAY/Ayushman cards",
+    "Coverage Amount / Benefit": "Free enrolment camps, health check-up melas",
+    "How to Apply": "Visit Ayushman Mela / Health & Wellness Centre during campaign",
+    "Official Source / Helpline": "ayushmanbhav.mohfw.gov.in",
+    "Category": "Central Govt Schemes"
+  },
+  {
+    "Scheme Name": "National Tuberculosis Elimination Programme (NTEP, formerly RNTCP)",
+    "Launched By / Year": "GoI + TN, since 2001 in TN",
+    "What It Covers": "Free TB diagnosis (incl. drug-resistant TB), free treatment (DOTS), nutritional support via Nikshay Poshan Yojana",
+    "Eligibility": "Any person with TB symptoms or diagnosed TB",
+    "Coverage Amount / Benefit": "Free diagnosis & medicines; Rs.500/month nutritional support during treatment",
+    "How to Apply": "Visit nearest Govt hospital / Designated Microscopy Centre, register on Nikshay portal",
+    "Official Source / Helpline": "nikshay.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National AIDS Control Programme (NACP) / TANSACS",
+    "Launched By / Year": "GoI + Tamil Nadu State AIDS Control Society",
+    "What It Covers": "Free HIV testing, counselling, ART (antiretroviral therapy), prevention programmes",
+    "Eligibility": "Any individual seeking HIV testing/treatment",
+    "Coverage Amount / Benefit": "Free testing at ICTC, free lifelong ART at ART centres",
+    "How to Apply": "Visit Integrated Counselling & Testing Centre (ICTC) at Govt hospitals",
+    "Official Source / Helpline": "tansacs.tn.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Leprosy Eradication Programme (NLEP)",
+    "Launched By / Year": "GoI, centrally sponsored",
+    "What It Covers": "Free diagnosis and Multi-Drug Therapy (MDT) for leprosy, disability prevention",
+    "Eligibility": "Anyone diagnosed with leprosy",
+    "Coverage Amount / Benefit": "Free MDT medicines and reconstructive surgery if needed",
+    "How to Apply": "Visit Govt PHC/hospital leprosy unit",
+    "Official Source / Helpline": "TN Directorate of Public Health",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Programme for Control of Blindness & Visual Impairment (NPCB&VI) / TNSBCS",
+    "Launched By / Year": "GoI, 1976; TN State Blindness Control Society since 1996",
+    "What It Covers": "Free cataract surgery, eye screening, free spectacles for school children",
+    "Eligibility": "All residents, priority to elderly and school children",
+    "Coverage Amount / Benefit": "Free cataract surgery and eye care at Govt hospitals/eye camps",
+    "How to Apply": "Visit District Hospital eye dept or eye camp",
+    "Official Source / Helpline": "TN State Blindness Control Society",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Programme for Prevention & Control of Cancer, Diabetes, CVD & Stroke (NPCDCS)",
+    "Launched By / Year": "GoI + TN, covers all 32 districts",
+    "What It Covers": "Free screening for hypertension, diabetes, cervical & breast cancer for age 30+, lifestyle counselling",
+    "Eligibility": "All individuals aged 30 years and above visiting Govt health facility",
+    "Coverage Amount / Benefit": "Free NCD screening and follow-up at 2,516+ Govt facilities in TN",
+    "How to Apply": "Visit any Govt PHC/hospital NCD clinic",
+    "Official Source / Helpline": "nhm.tn.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Programme for Health Care of the Elderly (NPHCE)",
+    "Launched By / Year": "GoI, centrally sponsored",
+    "What It Covers": "Geriatric clinics, dedicated elderly care wards at district hospitals, free medicines for elderly",
+    "Eligibility": "Senior citizens (60+ years)",
+    "Coverage Amount / Benefit": "Free geriatric OPD, medicines, and rehabilitation aids",
+    "How to Apply": "Visit District Hospital geriatric clinic",
+    "Official Source / Helpline": "TN Health Dept",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "District Mental Health Programme (DMHP)",
+    "Launched By / Year": "GoI, under NMHP",
+    "What It Covers": "Free psychiatric treatment, 10-bed psychiatric wards at HQ hospitals, mobile psychiatric teams, counselling",
+    "Eligibility": "Anyone needing mental health support, in DMHP-implemented districts",
+    "Coverage Amount / Benefit": "Free psychiatric consultation, medicines, counselling",
+    "How to Apply": "Visit Govt HQ Hospital psychiatric ward / weekly taluk clinic",
+    "Official Source / Helpline": "TN Health Dept / NIMHANS-supported",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Mental Health Programme (NMHP)",
+    "Launched By / Year": "GoI, 1982",
+    "What It Covers": "Mental health services integration into general healthcare, suicide prevention, awareness",
+    "Eligibility": "All citizens",
+    "Coverage Amount / Benefit": "Free mental health consultation at integrated centres",
+    "How to Apply": "Visit nearest Govt hospital mental health unit",
+    "Official Source / Helpline": "mohfw.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Vector Borne Disease Control Programme (NVBDCP)",
+    "Launched By / Year": "GoI, centrally sponsored",
+    "What It Covers": "Free diagnosis & treatment for malaria, dengue, chikungunya, filariasis, kala-azar",
+    "Eligibility": "All residents, especially in endemic areas",
+    "Coverage Amount / Benefit": "Free diagnostic tests and treatment at Govt facilities",
+    "How to Apply": "Visit Govt PHC/hospital during outbreak season or symptoms",
+    "Official Source / Helpline": "nvbdcp.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Iodine Deficiency Disorders Control Programme (NIDDCP)",
+    "Launched By / Year": "GoI, centrally sponsored",
+    "What It Covers": "Iodine deficiency monitoring, salt iodization enforcement, goitre survey",
+    "Eligibility": "General population, school children",
+    "Coverage Amount / Benefit": "Free screening camps and iodized salt distribution monitoring",
+    "How to Apply": "Through school health programme / PHC",
+    "Official Source / Helpline": "mohfw.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Oral Health Programme (NOHP)",
+    "Launched By / Year": "GoI, centrally sponsored",
+    "What It Covers": "Free dental check-up, basic dental treatment at district level dental units",
+    "Eligibility": "All residents",
+    "Coverage Amount / Benefit": "Free dental check-up and basic treatment at Govt Dental Units",
+    "How to Apply": "Visit District Hospital Dental Unit",
+    "Official Source / Helpline": "mohfw.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "National Organ Transplant Programme (NOTP)",
+    "Launched By / Year": "GoI, centrally sponsored",
+    "What It Covers": "Organ donation registration, transplant coordination, Swasth Bharat organ registry support",
+    "Eligibility": "Patients needing organ transplant; voluntary donors",
+    "Coverage Amount / Benefit": "Subsidised transplant coordination via Govt-notified transplant centres",
+    "How to Apply": "Register via NOTTO / State Organ & Tissue Transplant Organisation (TNOS)",
+    "Official Source / Helpline": "notto.mohfw.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "Universal Immunization Programme (UIP) / Mission Indradhanush",
+    "Launched By / Year": "GoI, under NHM",
+    "What It Covers": "Free vaccination for vaccine-preventable diseases for infants and pregnant women",
+    "Eligibility": "Infants (0-2 yrs) and pregnant women",
+    "Coverage Amount / Benefit": "Free vaccines (BCG, OPV, DPT, Measles, Hepatitis-B, etc.)",
+    "How to Apply": "Visit Anganwadi/PHC immunization session",
+    "Official Source / Helpline": "nhm.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "Integrated Disease Surveillance Programme (IDSP)",
+    "Launched By / Year": "GoI, centrally sponsored",
+    "What It Covers": "Disease outbreak surveillance and early warning system",
+    "Eligibility": "General population (system-level programme)",
+    "Coverage Amount / Benefit": "N/A - public health surveillance system",
+    "How to Apply": "Reported through Govt health facility network",
+    "Official Source / Helpline": "idsp.mohfw.gov.in",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "Rashtriya Vayoshri Yojana",
+    "Launched By / Year": "GoI, Ministry of Social Justice",
+    "What It Covers": "Free assistive devices (hearing aids, walking sticks, wheelchairs) for elderly BPL citizens",
+    "Eligibility": "Senior citizens (60+) belonging to BPL category",
+    "Coverage Amount / Benefit": "Free assistive living devices",
+    "How to Apply": "Apply through District Social Welfare Office camps",
+    "Official Source / Helpline": "Ministry of Social Justice & Empowerment",
+    "Category": "National Disease Programmes"
+  },
+  {
+    "Scheme Name": "TN Construction Workers Welfare Board - Medical Assistance",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical reimbursement/assistance for registered construction workers and family for hospitalization",
+    "Eligibility": "Registered construction workers with TN Construction Workers Welfare Board",
+    "Coverage Amount / Benefit": "Medical assistance as per board norms (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office with registration ID",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Construction Workers Welfare Board - Maternity Assistance",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Maternity benefit assistance for women construction workers",
+    "Eligibility": "Registered women construction workers",
+    "Coverage Amount / Benefit": "Cash assistance for delivery expenses",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Fishermen Welfare Board - Group Insurance Scheme",
+    "Launched By / Year": "TN Govt, Fisheries Dept / TNFWB",
+    "What It Covers": "Accident & hospitalization insurance cover for registered fishermen",
+    "Eligibility": "Registered active fishers, member of fishers cooperative society",
+    "Coverage Amount / Benefit": "Rs.2 lakh death/disability cover, Rs.1 lakh partial disability, Rs.10,000 hospitalization",
+    "How to Apply": "Apply via Fisheries Dept Assistant Director office",
+    "Official Source / Helpline": "fisheries.tn.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Fishermen Welfare Board - Saving-cum-Relief Scheme (Ban Period)",
+    "Launched By / Year": "TN Govt + GoI, Fisheries Dept",
+    "What It Covers": "Financial relief to fishers during fishing ban/lean period, indirectly supports health & nutrition",
+    "Eligibility": "Registered marine fishers",
+    "Coverage Amount / Benefit": "Cash relief during ban period",
+    "How to Apply": "Apply through Fisheries cooperative society",
+    "Official Source / Helpline": "fisheries.tn.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Unorganised Workers' Social Security Scheme - Health Component",
+    "Launched By / Year": "TN Govt, Labour Dept",
+    "What It Covers": "Health insurance & accident benefit for unorganised sector workers registered under e-Shram",
+    "Eligibility": "Unorganised workers registered on e-Shram/TN Unorganised Workers Board",
+    "Coverage Amount / Benefit": "Accident insurance + access to CMCHIS-linked health benefits",
+    "How to Apply": "Register on e-Shram portal / Labour Welfare Office",
+    "Official Source / Helpline": "eshram.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Domestic Workers Welfare Board - Medical Assistance",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical reimbursement for registered domestic workers",
+    "Eligibility": "Registered domestic workers with the welfare board",
+    "Coverage Amount / Benefit": "Medical assistance as per board norms",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Auto Rickshaw & Taxi Drivers Welfare Board - Health Scheme",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance and accident benefit for registered drivers",
+    "Eligibility": "Registered auto/taxi drivers with the welfare board",
+    "Coverage Amount / Benefit": "Medical/accident assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Handloom Weavers' Welfare Health Scheme",
+    "Launched By / Year": "TN Govt, Handlooms & Textiles Dept",
+    "What It Covers": "Health insurance and medical assistance for handloom weavers",
+    "Eligibility": "Registered handloom weavers under cooperative societies",
+    "Coverage Amount / Benefit": "Health insurance coverage (scheme-based)",
+    "How to Apply": "Apply through weavers' cooperative society",
+    "Official Source / Helpline": "TN Handlooms & Textiles Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Beedi Workers Welfare Fund - Medical Benefit",
+    "Launched By / Year": "GoI + TN, Ministry of Labour",
+    "What It Covers": "Medical treatment benefit for registered beedi workers",
+    "Eligibility": "Registered beedi workers under Beedi Workers Welfare Fund Act",
+    "Coverage Amount / Benefit": "Free/subsidised medical treatment at welfare dispensaries",
+    "How to Apply": "Apply through Beedi Workers Welfare Commissioner office",
+    "Official Source / Helpline": "Ministry of Labour & Employment",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "AYUSH (Ayurveda, Yoga, Unani, Siddha, Homeopathy) Free OPD Scheme",
+    "Launched By / Year": "TN Govt, Dept of Indian Medicine & Homeopathy",
+    "What It Covers": "Free Siddha/Ayurveda/Homeopathy consultation and medicines at Govt AYUSH dispensaries",
+    "Eligibility": "All residents",
+    "Coverage Amount / Benefit": "Free AYUSH consultation and medicines",
+    "How to Apply": "Visit Govt Siddha/Ayurveda/Homeopathy dispensary",
+    "Official Source / Helpline": "tnmedicalcouncil.org / tn.gov.in AYUSH Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "National AYUSH Mission (NAM)",
+    "Launched By / Year": "Govt of India, 2014",
+    "What It Covers": "Strengthening AYUSH infrastructure, integrating traditional medicine into public health system",
+    "Eligibility": "General public via Govt AYUSH facilities",
+    "Coverage Amount / Benefit": "Free/subsidised AYUSH treatment at integrated centres",
+    "How to Apply": "Visit Govt AYUSH wellness centre",
+    "Official Source / Helpline": "ayush.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Siddha Hospital Free Treatment Scheme (Govt Siddha Medical College, Chennai)",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free Siddha treatment, including for chronic skin and joint conditions",
+    "Eligibility": "All patients",
+    "Coverage Amount / Benefit": "Free OPD/IPD Siddha treatment",
+    "How to Apply": "Walk-in at Govt Siddha Medical College Hospital, Arumbakkam",
+    "Official Source / Helpline": "TN AYUSH Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Blood Transfusion Council - Free Blood Scheme",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free blood units for thalassemia, haemophilia, and BPL patients at Govt blood banks",
+    "Eligibility": "Thalassemia/haemophilia patients, BPL cardholders",
+    "Coverage Amount / Benefit": "Free blood units, blood component therapy",
+    "How to Apply": "Visit Govt blood bank with prescription",
+    "Official Source / Helpline": "tnbtc.tn.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Government Free Diagnostic Services Scheme",
+    "Launched By / Year": "TN Govt, NHM",
+    "What It Covers": "Free laboratory tests, X-ray, ultrasound, CT at Govt hospitals under NHM free diagnostics initiative",
+    "Eligibility": "All patients visiting Govt hospitals",
+    "Coverage Amount / Benefit": "Free diagnostic tests as per scheme list",
+    "How to Apply": "Avail at Govt hospital diagnostic centre",
+    "Official Source / Helpline": "nhm.tn.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Free Drug Distribution Scheme - Tamil Nadu Medical Services Corporation (TNMSC)",
+    "Launched By / Year": "TN Govt, since 1994",
+    "What It Covers": "Free essential medicines distribution to all Govt hospitals across TN",
+    "Eligibility": "All patients at Govt hospitals",
+    "Coverage Amount / Benefit": "Free essential medicines",
+    "How to Apply": "Available automatically at Govt hospital pharmacy",
+    "Official Source / Helpline": "tnmsc.com",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Kalaignar Kappagam Free Lunch-cum-Nutrition Scheme for Patients (Govt Hospital Canteens)",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Subsidised/free nutritious meals for patients and attendants admitted in Govt hospitals",
+    "Eligibility": "Inpatients and attendants at Govt hospitals",
+    "Coverage Amount / Benefit": "Free or Re.1 subsidised meals",
+    "How to Apply": "Available at hospital Amma Unavagam/canteen counters",
+    "Official Source / Helpline": "TN Health Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Differently-Abled Persons Health & Rehabilitation Scheme",
+    "Launched By / Year": "TN Govt, Welfare of Differently-Abled Dept",
+    "What It Covers": "Free assistive devices, corrective surgery, rehabilitation support",
+    "Eligibility": "Persons with disabilities registered under TN welfare schemes",
+    "Coverage Amount / Benefit": "Free aids/appliances, surgery assistance",
+    "How to Apply": "Apply at District Differently-Abled Welfare Office",
+    "Official Source / Helpline": "TN Dept for Welfare of Differently-Abled Persons",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Indira Gandhi National Disability Pension Scheme (IGNDPS)",
+    "Launched By / Year": "Govt of India + TN, social welfare",
+    "What It Covers": "Monthly pension support to severely disabled persons, indirectly supports healthcare costs",
+    "Eligibility": "Persons with 80%+ disability, BPL households",
+    "Coverage Amount / Benefit": "Monthly pension (amount per state norms)",
+    "How to Apply": "Apply at Taluk Social Welfare Office",
+    "Official Source / Helpline": "TN Social Welfare Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Old Age Pension Scheme (Indira Gandhi National Old Age Pension - IGNOAPS)",
+    "Launched By / Year": "GoI + TN Govt",
+    "What It Covers": "Monthly pension for elderly poor, supports access to medical needs",
+    "Eligibility": "Senior citizens 60+ years, BPL households",
+    "Coverage Amount / Benefit": "Monthly pension (state-revised amount)",
+    "How to Apply": "Apply at Taluk Social Welfare Office / VAO",
+    "Official Source / Helpline": "TN Social Welfare Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Free Ambulance for Pregnant Women - Amma Vodi / Pregnancy Transport Scheme",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free transport for pregnant women to hospital for delivery and emergency obstetric care",
+    "Eligibility": "Pregnant women in rural/semi-urban TN",
+    "Coverage Amount / Benefit": "Free pickup and drop transport",
+    "How to Apply": "Call 108 / coordinate via ASHA worker",
+    "Official Source / Helpline": "TN Health Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Government Employees & Pensioners Health Fund Scheme (TNGEPHFS / NHIS)",
+    "Launched By / Year": "TN Govt, Finance Dept",
+    "What It Covers": "Cashless/reimbursement health insurance for state govt employees and pensioners",
+    "Eligibility": "TN Govt serving employees and pensioners",
+    "Coverage Amount / Benefit": "Cashless treatment up to scheme-defined limit at empanelled hospitals",
+    "How to Apply": "Enrol through respective department's DDO",
+    "Official Source / Helpline": "TN Govt Treasury / Finance Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Mukhyamantri Vdestha Yojana style District Headquarters Hospital Upgradation Scheme",
+    "Launched By / Year": "TN Govt, Health Infrastructure",
+    "What It Covers": "Upgrading district hospitals with ICUs, trauma care, specialist departments",
+    "Eligibility": "All residents of respective district",
+    "Coverage Amount / Benefit": "Improved free specialist care at upgraded district hospitals",
+    "How to Apply": "Avail directly at upgraded District Headquarters Hospital",
+    "Official Source / Helpline": "TN Health & Family Welfare Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Snake-bite & Animal-bite Free Treatment Scheme",
+    "Launched By / Year": "TN Govt",
+    "What It Covers": "Free anti-snake venom (ASV) and anti-rabies vaccine (ARV) treatment at all Govt hospitals/PHCs",
+    "Eligibility": "Any patient with snake bite or animal bite",
+    "Coverage Amount / Benefit": "Free ASV/ARV vaccines and treatment",
+    "How to Apply": "Visit nearest Govt PHC/hospital immediately",
+    "Official Source / Helpline": "TN Health Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "National Programme on Prevention & Management of Burn Injuries (NPPMBI)",
+    "Launched By / Year": "Govt of India, centrally sponsored",
+    "What It Covers": "Free burn injury treatment, prevention awareness, and specialised burns ward facilities",
+    "Eligibility": "Burn injury patients at notified Govt hospitals",
+    "Coverage Amount / Benefit": "Free emergency and reconstructive treatment for burns",
+    "How to Apply": "Visit Govt hospital burns ward",
+    "Official Source / Helpline": "mohfw.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "Launched By / Year": "Govt of India, 2017",
+    "What It Covers": "Cash incentive for pregnant and lactating women for first living child to compensate wage loss",
+    "Eligibility": "Pregnant/lactating women (first child), excludes govt employees",
+    "Coverage Amount / Benefit": "Rs.5,000 in installments (cash incentive)",
+    "How to Apply": "Apply via Anganwadi Centre with required documents",
+    "Official Source / Helpline": "pmmvy.wcd.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Mission Indradhanush 4.0 (Intensified)",
+    "Launched By / Year": "Govt of India",
+    "What It Covers": "Catch-up vaccination drive for unvaccinated/partially vaccinated children and pregnant women in low-coverage areas",
+    "Eligibility": "Children 0-2 yrs and pregnant women in target districts/blocks",
+    "Coverage Amount / Benefit": "Free catch-up vaccination",
+    "How to Apply": "Through scheduled IMI rounds at Anganwadi/PHC",
+    "Official Source / Helpline": "nhm.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Kayakalp Award Scheme (Swachh Swasth Sarvatra)",
+    "Launched By / Year": "Govt of India",
+    "What It Covers": "Incentivises Govt health facilities for cleanliness, hygiene, infection control standards",
+    "Eligibility": "Public health facilities (system-level, indirect patient benefit via cleaner hospitals)",
+    "Coverage Amount / Benefit": "Recognition + funding for facilities meeting Kayakalp standards",
+    "How to Apply": "N/A - facility-level certification scheme",
+    "Official Source / Helpline": "qi.nhsrcindia.org",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "LaQshya (Labour Room Quality Improvement Initiative)",
+    "Launched By / Year": "Govt of India, under NHM",
+    "What It Covers": "Improving quality of care in labour rooms and maternity OTs in Govt hospitals",
+    "Eligibility": "Pregnant women delivering at Govt facilities",
+    "Coverage Amount / Benefit": "Improved safe-delivery care standards at certified facilities",
+    "How to Apply": "Avail at LaQshya-certified Govt hospital maternity ward",
+    "Official Source / Helpline": "nhm.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "SUMAN (Surakshit Matritva Aashwasan)",
+    "Launched By / Year": "Govt of India, 2019",
+    "What It Covers": "Assured free and dignified maternal and newborn healthcare with zero tolerance for denial of services",
+    "Eligibility": "All pregnant women and newborns up to 6 months, including up to 1 year for sick infants",
+    "Coverage Amount / Benefit": "Free, no-denial maternal & newborn care at Govt facilities",
+    "How to Apply": "Avail at any Govt health facility, toll-free helpline available",
+    "Official Source / Helpline": "suman.nhp.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "eSanjeevani Telemedicine Scheme",
+    "Launched By / Year": "Govt of India, under NHM",
+    "What It Covers": "Free online doctor consultation (OPD) via telemedicine for patients in remote areas",
+    "Eligibility": "All residents, especially in rural/remote areas",
+    "Coverage Amount / Benefit": "Free teleconsultation with Govt doctors",
+    "How to Apply": "Register on eSanjeevani app/portal",
+    "Official Source / Helpline": "esanjeevani.mohfw.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Ayushman Bharat Digital Mission (ABDM) / ABHA Health ID",
+    "Launched By / Year": "Govt of India, 2021",
+    "What It Covers": "Digital health ID for unified health records, linking across hospitals and schemes",
+    "Eligibility": "All Indian citizens",
+    "Coverage Amount / Benefit": "Free digital health record creation and linkage",
+    "How to Apply": "Register via ABHA app or at Govt hospital registration desk",
+    "Official Source / Helpline": "abdm.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Sand/Stone Quarry Workers Welfare Board - Medical Assistance",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical reimbursement for registered quarry workers",
+    "Eligibility": "Registered quarry/mine workers",
+    "Coverage Amount / Benefit": "Medical assistance as per board norms",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Tailoring Workers Welfare Board - Health Scheme",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered tailoring workers",
+    "Eligibility": "Registered tailoring workers under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Goldsmith Workers Welfare Board - Medical Benefit",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered goldsmiths/jewellery workers",
+    "Eligibility": "Registered goldsmith workers under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Washermen (Vannar) Welfare Board - Health Scheme",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered washermen community workers",
+    "Eligibility": "Registered washermen under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Barber (Hairdressers) Welfare Board - Medical Scheme",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered barbers/hairdressers",
+    "Eligibility": "Registered workers under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Palm Tree Workers (Tappers) Welfare Board - Health Scheme",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered toddy/palm tappers",
+    "Eligibility": "Registered palm tree workers under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Artisans (Kammala) Welfare Board - Medical Assistance",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered traditional artisans",
+    "Eligibility": "Registered artisans under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Drivers (Cine/Theatre) Welfare Board - Health Scheme",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered cinema/theatre workers",
+    "Eligibility": "Registered workers under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "TN Footwear & Leather Goods Manufacturing Workers Welfare Board - Health Scheme",
+    "Launched By / Year": "TN Govt, Labour Welfare Dept",
+    "What It Covers": "Medical assistance for registered leather/footwear workers",
+    "Eligibility": "Registered workers under welfare board",
+    "Coverage Amount / Benefit": "Medical assistance (case-based)",
+    "How to Apply": "Apply at Labour Welfare Office",
+    "Official Source / Helpline": "TN Labour Welfare Board",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Employees' Provident Fund Organisation (EPFO) - Medical Pension Component",
+    "Launched By / Year": "Govt of India, Ministry of Labour",
+    "What It Covers": "Disability pension and medical-linked benefits for EPF subscribers",
+    "Eligibility": "EPF/EPS scheme members",
+    "Coverage Amount / Benefit": "Pension and disability benefit (scheme-based)",
+    "How to Apply": "Apply via EPFO member portal",
+    "Official Source / Helpline": "epfindia.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Rashtriya Swasthya Bima Yojana (RSBY) - Legacy Coverage",
+    "Launched By / Year": "Govt of India, 2008 (subsumed into PM-JAY in many states)",
+    "What It Covers": "Cashless hospitalization for BPL families (legacy scheme, largely merged into PM-JAY)",
+    "Eligibility": "BPL families originally enrolled under RSBY",
+    "Coverage Amount / Benefit": "Up to Rs.30,000 per family per year (legacy cover)",
+    "How to Apply": "Check legacy card validity / migrate to PM-JAY",
+    "Official Source / Helpline": "pmjay.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "National Programme for Healthcare of Persons with Sickle Cell Disease (NHM Mission Mode)",
+    "Launched By / Year": "Govt of India, 2023",
+    "What It Covers": "Universal screening for sickle cell disease in tribal-dominated districts, counselling and management",
+    "Eligibility": "Tribal population in mission districts, all age groups",
+    "Coverage Amount / Benefit": "Free screening, genetic counselling and management",
+    "How to Apply": "Through tribal block PHC/screening camps",
+    "Official Source / Helpline": "sicklecellmission.mohfw.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "National Programme for Control & Treatment of Occupational Diseases",
+    "Launched By / Year": "Govt of India, Ministry of Labour",
+    "What It Covers": "Occupational health screening and treatment for industrial/factory workers",
+    "Eligibility": "Registered factory and industrial workers",
+    "Coverage Amount / Benefit": "Free occupational health screening",
+    "How to Apply": "Through ESIC/factory medical inspectorate",
+    "Official Source / Helpline": "Ministry of Labour & Employment",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY) - Nutrition Support",
+    "Launched By / Year": "Govt of India",
+    "What It Covers": "Free additional foodgrains to support nutrition of poor households (supports overall health outcomes)",
+    "Eligibility": "BPL/Antyodaya ration cardholders",
+    "Coverage Amount / Benefit": "Free additional foodgrains via ration shops",
+    "How to Apply": "Avail through Fair Price Shop with ration card",
+    "Official Source / Helpline": "pmgky.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Integrated Child Development Services (ICDS) - Health & Nutrition Component",
+    "Launched By / Year": "Govt of India, since 1975",
+    "What It Covers": "Supplementary nutrition, health check-ups, immunization, growth monitoring for children under 6 and mothers",
+    "Eligibility": "Children 0-6 yrs, pregnant & lactating women",
+    "Coverage Amount / Benefit": "Free supplementary nutrition and health check-ups",
+    "How to Apply": "Through local Anganwadi Centre",
+    "Official Source / Helpline": "wcd.nic.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "POSHAN Abhiyaan (National Nutrition Mission)",
+    "Launched By / Year": "Govt of India, 2018",
+    "What It Covers": "Reducing stunting, undernutrition, anemia among children, adolescent girls, pregnant/lactating women",
+    "Eligibility": "Children, adolescent girls, pregnant/lactating women",
+    "Coverage Amount / Benefit": "Convergent nutrition services, growth monitoring, IFA supplementation",
+    "How to Apply": "Through Anganwadi Centre under ICDS",
+    "Official Source / Helpline": "poshanabhiyaan.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Scheme for Adolescent Girls (SAG) / Saksham Anganwadi",
+    "Launched By / Year": "Govt of India",
+    "What It Covers": "Nutrition, health check-up and life-skill education for out-of-school adolescent girls",
+    "Eligibility": "Out-of-school adolescent girls aged 11-14 years",
+    "Coverage Amount / Benefit": "Free nutrition supplement and health screening",
+    "How to Apply": "Through local Anganwadi Centre",
+    "Official Source / Helpline": "wcd.nic.in",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Government IVF / Infertility Treatment Support Scheme",
+    "Launched By / Year": "TN Govt, select Govt Medical College Hospitals",
+    "What It Covers": "Subsidised infertility evaluation and IVF treatment at Govt medical college hospitals",
+    "Eligibility": "Eligible couples referred through Govt hospital gynaecology dept",
+    "Coverage Amount / Benefit": "Subsidised IVF/infertility treatment package",
+    "How to Apply": "Referral via Govt Medical College Hospital Gynaecology OPD",
+    "Official Source / Helpline": "TN Health & Family Welfare Dept",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Free Hearing Aid Distribution Scheme (ADIP-linked)",
+    "Launched By / Year": "TN Govt + GoI ADIP Scheme",
+    "What It Covers": "Free hearing aids and ENT screening for hearing-impaired persons",
+    "Eligibility": "BPL/disabled persons with hearing impairment",
+    "Coverage Amount / Benefit": "Free hearing aids and devices",
+    "How to Apply": "Apply through District Disability Welfare Office / ADIP camp",
+    "Official Source / Helpline": "Ministry of Social Justice & Empowerment",
+    "Category": "Welfare Board & Other Schemes"
+  },
+  {
+    "Scheme Name": "Assistance to Disabled Persons for Purchase/Fitting of Aids & Appliances (ADIP Scheme)",
+    "Launched By / Year": "Govt of India, Ministry of Social Justice",
+    "What It Covers": "Free/subsidised aids and appliances (wheelchairs, calipers, artificial limbs, hearing aids) for persons with disabilities",
+    "Eligibility": "Persons with disabilities, income-based eligibility",
+    "Coverage Amount / Benefit": "Free to highly subsidised assistive devices",
+    "How to Apply": "Apply through District Disability Welfare camp / NGO implementing agency",
+    "Official Source / Helpline": "disabilityaffairs.gov.in",
+    "Category": "Welfare Board & Other Schemes"
+  }
+]

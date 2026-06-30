@@ -8,6 +8,7 @@ import Admin from './pages/Admin';
 import Facilities from './pages/Facilities';
 import ChatbotPanel from './components/ChatbotPanel';
 import FloatingSideNav from './components/FloatingSideNav';
+import GovernmentSchemes from './pages/GovernmentSchemes';
 import { TAMIL_NADU_DISTRICTS } from './data/districts';
 
 export default function App() {
@@ -184,11 +185,18 @@ export default function App() {
     <div className={`app-container ${emergencyMode ? 'emergency-theme' : ''}`}>
       
       {/* Floating Global Side Nav */}
-      <FloatingSideNav 
-        onSearchClick={() => setIsSearchOpen(true)}
+      <FloatingSideNav
+        onSearchClick={() => {
+          setCurrentScreen('home');
+          setIsSearchOpen(true);
+        }}
         onEmergency={() => handleEmergencyToggle(true)}
-        onCompare={() => setCurrentScreen('compare')}
+        onCompare={() => {
+          if (compareList.length > 0) setCurrentScreen('compare');
+          else alert("Add hospitals to compare first!");
+        }}
         onChatbot={() => setChatbotOpen(true)}
+        onSchemes={() => setCurrentScreen('schemes')}
       />
 
       {/* Navbar Header */}
@@ -450,6 +458,10 @@ export default function App() {
 
         {currentScreen === 'facilities' && (
           <Facilities />
+        )}
+
+        {currentScreen === 'schemes' && (
+          <GovernmentSchemes />
         )}
       </main>
 

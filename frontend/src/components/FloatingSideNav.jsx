@@ -1,12 +1,13 @@
 import React from 'react';
-import { Search, ShieldAlert, GitCompare, MessageSquare } from 'lucide-react';
+import { Search, ShieldAlert, GitCompare, MessageSquare, Landmark } from 'lucide-react';
 import './FloatingSideNav.css';
 
 export default function FloatingSideNav({ 
   onSearchClick, 
   onEmergency, 
   onCompare, 
-  onChatbot 
+  onChatbot,
+  onSchemes
 }) {
   return (
     <div className="floating-side-nav">
@@ -40,6 +41,14 @@ export default function FloatingSideNav({
           <MessageSquare size={22} />
         </div>
         <div className="floating-nav-text">AI Assistant</div>
+      </div>
+
+      {/* Government Schemes Action */}
+      <div className="floating-nav-item schemes" onClick={onSchemes}>
+        <div className="floating-nav-icon">
+          <Landmark size={22} />
+        </div>
+        <div className="floating-nav-text">Govt Schemes</div>
       </div>
     </div>
   );
