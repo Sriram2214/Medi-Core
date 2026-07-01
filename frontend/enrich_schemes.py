@@ -4,7 +4,7 @@ import re
 with open(r"C:\Hoscoo det\frontend\src\data\schemes.json", "r", encoding="utf-8") as f:
     schemes = json.load(f)
 
-# Comprehensive mapping for known keywords and schemes to official portals
+# Comprehensive mapping for known keywords and schemes to official portals (CHECKED FIRST)
 url_rules = [
     (r"CMCHIS|Chief Minister.*Insurance|Kalaignar", "https://www.cmchistn.com/"),
     (r"108|Ambulance|EMRI|NK-48|Nammai Kaakkum", "https://www.emri.in/tamil-nadu/"),
@@ -40,23 +40,21 @@ def get_direct_url(scheme):
     name = str(scheme.get('Scheme Name', ''))
     combined = f"{name} {text}"
     
-    # Check if text already has a valid URL
-    url_regex = re.compile(r"(https?://[^\s]+)|(www\.[^\s]+)|([a-zA-Z0-9-]+\.[a-zA-Z]{2,}(/[^\s]*)?)", re.IGNORECASE)
-    match = url_regex.search(text)
-    if match:
-        url = match.group(0)
-        # Avoid treating generic text like "tn.gov.in" without context if we have better portal rules, but if it's a domain, use it
-        if "." in url and not url.endswith(".") and len(url) > 5:
-            if not url.startswith("http"):
-                url = "https://" + url
-            return url
-
-    # Match against rule patterns
+    # 1. ALWAYS Match against verified rule patterns FIRST!
     for pattern, portal in url_rules:
         if re.search(pattern, combined, re.IGNORECASE):
             return portal
             
-    # Check if TN or Central
+    # 2. Check if text explicitly has a real working URL starting with http:// or https:// or www.
+    url_regex = re.compile(r"(https?://[^\s]+)|(www\.[^\s]+)", re.IGNORECASE)
+    match = url_regex.search(text)
+    if match:
+        url = match.group(0)
+        if not url.startswith("http"):
+            url = "https://" + url
+        return url
+
+    # 3. If no rule or strict URL, check if TN or Central
     if re.search(r"TN|Tamil Nadu|Chief Minister|Amma|Kalaignar|State", combined, re.IGNORECASE):
         return "https://tnhealth.tn.gov.in/"
     
@@ -70,4 +68,4 @@ for s in schemes:
 with open(r"C:\Hoscoo det\frontend\src\data\schemes.json", "w", encoding="utf-8") as f:
     json.dump(schemes, f, ensure_ascii=False, indent=2)
 
-print(f"Successfully enriched {count} schemes with direct portal URLs.")
+print(f"Successfully enriched {count} schemes with verified direct portal URLs.")
