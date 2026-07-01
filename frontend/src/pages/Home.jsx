@@ -1,14 +1,25 @@
 import React from 'react';
-import { Search, MapPin, Shield, DollarSign, Zap, X } from 'lucide-react';
+import { Search, MapPin, Shield, DollarSign, Zap, X, Sparkles, Heart, Activity, Award, ArrowRight } from 'lucide-react';
 import InfrastructureSection from '../components/InfrastructureSection';
+import { TAMIL_NADU_DISTRICTS } from '../data/districts';
+import './Home.css';
 
+const SYMPTOM_CATEGORIES = [
+  { label: '🫀 Bypass Surgery / Heart Pain', val: 'dil me dard' },
+  { label: '🫘 Kidney Stone Removal (Pathri)', val: 'pathri operation' },
+  { label: '🦴 Knee Joint Replacement', val: 'knee replacement' },
+  { label: '🎗️ Cancer Chemotherapy', val: 'cancer' },
+  { label: '👶 C-Section Delivery', val: 'c-section' },
+  { label: '🧠 Neuro / Stroke Care', val: 'stroke' },
+  { label: '🩸 Accident & Trauma Care', val: 'accident' }
+];
 
-const SUGGESTIONS = [
-  { label: 'Dil me dard (Heart Pain)', val: 'dil me dard' },
-  { label: 'Kidney Stone (Pathri)', val: 'pathri operation' },
-  { label: 'Knee Joint Replacement', val: 'knee replacement' },
-  { label: 'Cancer Chemotherapy', val: 'cancer' },
-  { label: 'C-Section Delivery', val: 'c-section' }
+const BUDGET_PRESETS = [
+  { label: '< ₹50,000', val: '50000' },
+  { label: '< ₹1,00,000', val: '100000' },
+  { label: '< ₹3,00,000', val: '300000' },
+  { label: '< ₹5,00,000', val: '500000' },
+  { label: 'No Budget Limit', val: '' }
 ];
 
 export default function Home({
@@ -29,226 +40,140 @@ export default function Home({
   onExploreFacilities
 }) {
   return (
-    <div style={{ 
-      display: 'flex', 
-      flexDirection: 'column', 
-      gap: '2.5rem',
-      backgroundImage: "url('/medicore-banner.jpg')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed',
-      minHeight: '100vh',
-      padding: '2rem 1rem',
-      margin: '-2rem' // To negate parent padding if any and stretch full width
-    }}>
+    <div className="home-container">
       
       {/* Hero Section */}
-      <div style={{ textAlign: 'center', padding: '1.5rem 0' }}>
-        <h1 style={{
-          fontSize: '3rem',
-          lineHeight: '1.2',
-          fontFamily: 'var(--font-heading)',
-          fontWeight: 800,
-          background: 'linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-light) 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          marginBottom: '1rem'
-        }}>
+      <div className="hero-header">
+        <h1 className="hero-title">
           Find the Best Hospital for Your Treatment
         </h1>
-        <p style={{
-          fontSize: '1.25rem',
-          color: 'var(--text-muted)',
-          maxWidth: '700px',
-          margin: '0 auto'
-        }}>
-          MediGuide AI calculates a **Treatment Quality Index (TQI)** to give you objective, explainable, and localized hospital recommendation scores.
+        <p className="hero-subtitle">
+          MediGuide AI calculates a <strong>Treatment Quality Index (TQI)</strong> to give you objective, explainable, and localized hospital recommendation scores across Tamil Nadu and Metro Cities.
         </p>
       </div>
 
-      {/* Main Search Panel - Now a Modal */}
+      {/* AI Hospital Discovery Dashboard (Modal) */}
       {isSearchOpen && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          backdropFilter: 'blur(4px)',
-          zIndex: 1000,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '1rem'
-        }}>
-          <div className="glass-panel" style={{ 
-            padding: '2rem', 
-            boxShadow: 'var(--shadow-lg)', 
-            maxWidth: '800px', 
-            width: '100%',
-            position: 'relative',
-            maxHeight: '90vh',
-            overflowY: 'auto'
-          }}>
-            <button 
-              onClick={() => setIsSearchOpen(false)}
-              style={{
-                position: 'absolute',
-                top: '1rem',
-                right: '1rem',
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                color: 'var(--text-muted)'
-              }}
-            >
+        <div className="ai-modal-overlay" onClick={() => setIsSearchOpen(false)}>
+          <div className="ai-search-dashboard animate-scale-up" onClick={(e) => e.stopPropagation()}>
+            <button className="ai-modal-close" onClick={() => setIsSearchOpen(false)}>
               <X size={24} />
             </button>
             
-            <h2 style={{ fontSize: '1.4rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Search style={{ color: 'var(--primary-teal)' }} /> Search hospital database
-            </h2>
+            {/* Dashboard Header */}
+            <div className="dashboard-header">
+              <span className="ai-badge">
+                <Sparkles size={14} /> AI-Powered Clinical Matcher
+              </span>
+              <h2 className="dashboard-title">
+                Smart Hospital & Treatment Discovery
+              </h2>
+              <p className="dashboard-subtitle">
+                Enter your symptoms or procedure to get AI-ranked hospitals tailored by quality, proximity, and cost.
+              </p>
+            </div>
             
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div className="search-form-section">
               {/* Row 1: Condition & City */}
               <div className="grid-2">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  <label style={{ fontWeight: 600, fontSize: '0.9rem' }}>Medical Condition / Symptom</label>
-                  <div style={{ position: 'relative' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <label className="section-label">
+                    <Activity size={18} className="icon-teal" /> Medical Condition / Surgery / Symptom
+                  </label>
+                  <div className="input-with-icon">
+                    <Search size={18} className="input-icon-left" />
                     <input
                       type="text"
-                      placeholder="Enter disease, surgery or symptom (e.g. bypass, pathri, knee)..."
+                      placeholder="e.g. Bypass Surgery, Kidney Stone, Chemotherapy, C-Section..."
                       value={condition}
                       onChange={(e) => setCondition(e.target.value)}
-                      style={{
-                        width: '100%',
-                        padding: '0.8rem 1rem',
-                        borderRadius: '8px',
-                        border: '1px solid var(--border-color)',
-                        fontSize: '1rem',
-                        outline: 'none'
-                      }}
+                      className="ai-input-field"
                     />
                   </div>
                 </div>
                 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  <label style={{ fontWeight: 600, fontSize: '0.9rem' }}>City Selector</label>
-                  <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
-                    <select
-                      value={city}
-                      onChange={(e) => setCity(e.target.value)}
-                      style={{
-                        width: '100%',
-                        padding: '0.8rem 1rem',
-                        borderRadius: '8px',
-                        border: '1px solid var(--border-color)',
-                        fontSize: '1rem',
-                        outline: 'none',
-                        backgroundColor: 'var(--white)',
-                        color: 'var(--text-dark)'
-                      }}
-                    >
-                      <option value="Pune">Pune</option>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <label className="section-label">
+                    <MapPin size={18} className="icon-blue" /> City / District Selector
+                  </label>
+                  <select
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                    className="ai-select-field"
+                  >
+                    <optgroup label="Tamil Nadu Districts">
+                      {TAMIL_NADU_DISTRICTS.map((d, idx) => (
+                        <option key={idx} value={d.name}>{d.name}</option>
+                      ))}
+                    </optgroup>
+                    <optgroup label="Other Metro Cities">
                       <option value="Bangalore">Bangalore</option>
-                      <option value="Chennai">Chennai</option>
                       <option value="Hyderabad">Hyderabad</option>
+                      <option value="Pune">Pune</option>
                       <option value="Jaipur">Jaipur</option>
-                    </select>
-                  </div>
+                    </optgroup>
+                  </select>
                 </div>
               </div>
 
-              {/* Condition Suggestions Translation Translator */}
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Try Hindi or English translations:</span>
-                {SUGGESTIONS.map((s, idx) => (
+              {/* Categorized Symptom Quick-Select Chips */}
+              <div className="symptom-chips-container">
+                <span className="chips-title">🔥 Popular Clinical Searches & Translations:</span>
+                {SYMPTOM_CATEGORIES.map((s, idx) => (
                   <button
                     key={idx}
+                    type="button"
                     onClick={() => setCondition(s.val)}
-                    style={{
-                      fontSize: '0.75rem',
-                      padding: '0.3rem 0.6rem',
-                      borderRadius: '999px',
-                      border: '1px solid var(--border-color)',
-                      backgroundColor: 'var(--white)',
-                      color: 'var(--primary-teal)',
-                      cursor: 'pointer',
-                      transition: 'var(--transition)'
-                    }}
-                    className="hover-action-btn"
+                    className="symptom-chip"
                   >
                     {s.label}
                   </button>
                 ))}
               </div>
 
-              <hr style={{ border: 'none', borderBottom: '1px solid var(--border-color)' }} />
+              <hr style={{ border: 'none', borderBottom: '2px solid var(--border-color)', margin: '0.5rem 0' }} />
 
-              {/* Row 2: Priority Toggle Tabs */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <label style={{ fontWeight: 600, fontSize: '0.9rem' }}>Sort Recommendations By</label>
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(4, 1fr)',
-                  gap: '0.5rem',
-                  backgroundColor: 'var(--bg-blue-gray)',
-                  padding: '0.4rem',
-                  borderRadius: '10px'
-                }}>
+              {/* Row 2: Priority Sort Cards Grid */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <label className="section-label">
+                  <Award size={18} className="icon-gold" /> How should AI prioritize recommendations?
+                </label>
+                <div className="priority-cards-grid">
                   {[
-                    { id: 'quality', label: 'Quality (TQI Score)', icon: <Shield size={16} /> },
-                    { id: 'affordability', label: 'Affordability (Cost)', icon: <DollarSign size={16} /> },
-                    { id: 'proximity', label: 'Proximity (Distance)', icon: <MapPin size={16} /> },
-                    { id: 'emergency', label: 'Emergency Readiness', icon: <Zap size={16} /> }
+                    { id: 'quality', label: 'Quality (TQI Score)', desc: 'Best clinical outcome & success rate', icon: <Shield size={20} /> },
+                    { id: 'affordability', label: 'Affordability (Cost)', desc: 'Lowest procedure cost & discounts', icon: <DollarSign size={20} /> },
+                    { id: 'proximity', label: 'Proximity (Distance)', desc: 'Shortest driving time from your city', icon: <MapPin size={20} /> },
+                    { id: 'emergency', label: 'Emergency Readiness', desc: '24x7 Trauma care & active ICU beds', icon: <Zap size={20} /> }
                   ].map(tab => (
                     <button
                       key={tab.id}
+                      type="button"
                       onClick={() => setPriority(tab.id)}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '0.4rem',
-                        padding: '0.6rem',
-                        border: 'none',
-                        borderRadius: '8px',
-                        cursor: 'pointer',
-                        fontWeight: 600,
-                        fontSize: '0.85rem',
-                        transition: 'var(--transition)',
-                        backgroundColor: priority === tab.id ? 'var(--white)' : 'transparent',
-                        color: priority === tab.id ? 'var(--primary-teal)' : 'var(--text-muted)',
-                        boxShadow: priority === tab.id ? 'var(--shadow-sm)' : 'none'
-                      }}
+                      className={`priority-card ${priority === tab.id ? 'active' : ''}`}
                     >
-                      {tab.icon} {tab.label}
+                      <div className="priority-icon-wrapper">
+                        {tab.icon}
+                      </div>
+                      <span className="priority-label">{tab.label}</span>
+                      <span className="priority-desc">{tab.desc}</span>
                     </button>
                   ))}
                 </div>
               </div>
 
-              {/* Row 3: Optional parameters (Insurance & Budget) */}
+              <hr style={{ border: 'none', borderBottom: '2px solid var(--border-color)', margin: '0.5rem 0' }} />
+
+              {/* Row 3: Insurance & Budget */}
               <div className="grid-2">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  <label style={{ fontWeight: 600, fontSize: '0.9rem' }}>Insurance Provider (Optional)</label>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <label className="section-label">🛡️ Insurance Provider (Optional)</label>
                   <select
                     value={insurance}
                     onChange={(e) => setInsurance(e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '0.8rem 1rem',
-                      borderRadius: '8px',
-                      border: '1px solid var(--border-color)',
-                      fontSize: '1rem',
-                      backgroundColor: 'var(--white)',
-                      color: 'var(--text-dark)',
-                      outline: 'none'
-                    }}
+                    className="ai-select-field"
                   >
                     <option value="">-- No Insurance (Cash Payment) --</option>
+                    <option value="CMCHIS (TN State Govt Insurance)">CMCHIS (TN State Govt Insurance)</option>
                     <option value="Star Health">Star Health</option>
                     <option value="HDFC ERGO">HDFC ERGO</option>
                     <option value="New India Assurance">New India Assurance</option>
@@ -258,95 +183,83 @@ export default function Home({
                   </select>
                 </div>
                 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  <label style={{ fontWeight: 600, fontSize: '0.9rem' }}>Max Budget Limit (Optional, ₹)</label>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <label className="section-label">💰 Max Budget Limit (Optional, ₹)</label>
                   <input
                     type="number"
                     placeholder="e.g. 300000"
                     value={budget}
                     onChange={(e) => setBudget(e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '0.8rem 1rem',
-                      borderRadius: '8px',
-                      border: '1px solid var(--border-color)',
-                      fontSize: '1rem',
-                      outline: 'none'
-                    }}
+                    className="ai-input-field"
+                    style={{ paddingLeft: '1.2rem' }}
                   />
+                  <div className="budget-presets">
+                    {BUDGET_PRESETS.map((bp, idx) => (
+                      <button
+                        key={idx}
+                        type="button"
+                        onClick={() => setBudget(bp.val)}
+                        className="budget-chip"
+                      >
+                        {bp.label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
 
-              {/* Submit */}
+              {/* Discover AI Button */}
               <button
+                type="button"
                 onClick={() => {
                   setIsSearchOpen(false);
                   onSearch();
                 }}
-                className="btn btn-primary"
-                style={{
-                  padding: '1rem',
-                  borderRadius: '8px',
-                  fontSize: '1.1rem',
-                  fontWeight: 'bold',
-                  marginTop: '0.5rem'
-                }}
+                className="btn-discover-ai"
               >
-                <Search size={20} /> discover hospital recommendations
+                <Sparkles size={22} /> Discover AI-Ranked Hospitals <ArrowRight size={22} />
               </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* Removed the inline image as it is now the background */}
-
       {/* Emergency Quick access Banner */}
-      <div style={{
-        backgroundColor: '#7F1D1D',
-        color: '#FCA3A3',
-        border: '2px solid #EF4444',
-        borderRadius: 'var(--radius-md)',
-        padding: '1.5rem',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        flexWrap: 'wrap',
-        gap: '1rem',
-        boxShadow: '0 10px 15px -3px rgba(239, 68, 68, 0.1)'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+      <div className="emergency-banner">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
           <div style={{
-            backgroundColor: 'rgba(239, 68, 68, 0.2)',
-            padding: '0.8rem',
+            backgroundColor: 'rgba(239, 68, 68, 0.25)',
+            padding: '1rem',
             borderRadius: '50%',
             display: 'inline-flex',
             alignItems: 'center',
             justifyContent: 'center',
             color: '#EF4444'
           }} className="pulse">
-            <Zap size={32} />
+            <Zap size={36} />
           </div>
           <div>
-            <h3 style={{ color: '#FEE2E2', fontSize: '1.3rem', fontWeight: 'bold' }}>Emergency Fast-Track Mode</h3>
-            <p style={{ fontSize: '0.9rem', maxWidth: '600px', color: '#FCA5A5' }}>
+            <h3 className="emergency-title"><Zap size={24} /> Emergency Fast-Track Mode</h3>
+            <p style={{ fontSize: '0.95rem', maxWidth: '650px', color: '#FCA5A5', lineHeight: '1.6', margin: 0 }}>
               Are you looking for immediate critical admission? Fast-track bypasses all filters to instantly rank the nearest hospitals with active ICU beds and 24x7 ambulance facilities.
             </p>
           </div>
         </div>
         <button
+          type="button"
           onClick={() => onEmergencyToggle(true)}
           className="btn btn-danger"
           style={{
             backgroundColor: '#EF4444',
             color: '#FFFFFF',
-            padding: '1rem 2rem',
-            fontWeight: 'bold',
-            fontSize: '1rem',
-            borderRadius: '8px'
+            padding: '1.1rem 2.2rem',
+            fontWeight: '800',
+            fontSize: '1.05rem',
+            borderRadius: '16px',
+            boxShadow: '0 8px 20px rgba(239, 68, 68, 0.4)'
           }}
         >
-          Activate Emergency Mode
+          Activate Emergency Mode 🚨
         </button>
       </div>
       
