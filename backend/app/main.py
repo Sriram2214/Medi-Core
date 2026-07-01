@@ -53,6 +53,18 @@ def get_hospital_recommendations(req: schemas.SearchRequest, db: Session = Depen
             detail=f"Recommendation Engine error: {str(e)}"
         )
 
+# 1.5 Geo-Spatial Location Radar Endpoint
+@app.post("/api/nearby", response_model=schemas.NearbyResponse)
+def get_nearby_facilities_endpoint(req: schemas.NearbyRequest, db: Session = Depends(get_db)):
+    try:
+        return recommender.get_nearby_facilities(db, req)
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Geo-Spatial Engine error: {str(e)}"
+        )
+
+
 # 2. List All/Filtered Hospitals
 @app.get("/api/hospitals", response_model=List[schemas.HospitalBriefResponse])
 def get_hospitals(city: Optional[str] = None, db: Session = Depends(get_db)):

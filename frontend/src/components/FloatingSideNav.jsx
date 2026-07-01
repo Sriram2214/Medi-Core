@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, ShieldAlert, GitCompare, MessageSquare, Landmark } from 'lucide-react';
+import { Search, ShieldAlert, GitCompare, MessageSquare, Landmark, Radio } from 'lucide-react';
 import './FloatingSideNav.css';
 
 export default function FloatingSideNav({ 
@@ -7,7 +7,8 @@ export default function FloatingSideNav({
   onEmergency, 
   onCompare, 
   onChatbot,
-  onSchemes
+  onSchemes,
+  onOpenRadar
 }) {
   return (
     <div className="floating-side-nav">
@@ -17,6 +18,14 @@ export default function FloatingSideNav({
           <Search size={22} />
         </div>
         <div className="floating-nav-text">Search Hospitals</div>
+      </div>
+
+      {/* GPS Radar Action */}
+      <div className="floating-nav-item appointment" onClick={onOpenRadar} style={{ background: 'linear-gradient(135deg, #0ea5e9, #10b981)' }}>
+        <div className="floating-nav-icon">
+          <Radio size={22} />
+        </div>
+        <div className="floating-nav-text">GPS Near Me</div>
       </div>
 
       {/* Emergency Action */}
@@ -53,3 +62,4 @@ export default function FloatingSideNav({
     </div>
   );
 }
+

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldAlert, Sun, Moon, MessageSquare, User, Zap, HelpCircle, Activity, Award, ChevronDown } from 'lucide-react';
+import { ShieldAlert, Sun, Moon, MessageSquare, User, Zap, HelpCircle, Activity, Award, ChevronDown, Radio } from 'lucide-react';
 import Home from './pages/Home';
 import Results from './pages/Results';
 import HospitalProfile from './pages/HospitalProfile';
@@ -8,12 +8,14 @@ import Admin from './pages/Admin';
 import Facilities from './pages/Facilities';
 import ChatbotPanel from './components/ChatbotPanel';
 import FloatingSideNav from './components/FloatingSideNav';
+import LocationRadarModal from './components/LocationRadarModal';
 import GovernmentSchemes from './pages/GovernmentSchemes';
 import { TAMIL_NADU_DISTRICTS } from './data/districts';
 
 export default function App() {
   // Screen Router
   const [currentScreen, setCurrentScreen] = useState('home'); // home, results, profile, compare, admin
+  const [radarOpen, setRadarOpen] = useState(false);
 
   // Search parameters
   const [condition, setCondition] = useState('');
@@ -197,6 +199,7 @@ export default function App() {
         }}
         onChatbot={() => setChatbotOpen(true)}
         onSchemes={() => setCurrentScreen('schemes')}
+        onOpenRadar={() => setRadarOpen(true)}
       />
 
       {/* Navbar Header */}
@@ -275,6 +278,11 @@ export default function App() {
               <button className="dropdown-item" onClick={() => handleSpecialtySelect('Oncology')}>Oncology Center</button>
               <button className="dropdown-item" onClick={() => handleSpecialtySelect('Gynecology')}>Gynecology & Maternity</button>
             </div>
+          </div>
+          
+          <div className="nav-tab-item" onClick={() => setRadarOpen(true)} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#0ea5e9', fontWeight: '800' }}>
+            <Radio size={16} className="animate-pulse" />
+            <span>📍 GPS Near Me</span>
           </div>
           
           <div className="nav-tab-item">
@@ -409,6 +417,7 @@ export default function App() {
             onSearch={() => handleSearch()}
             onEmergencyToggle={handleEmergencyToggle}
             onExploreFacilities={() => setCurrentScreen('facilities')}
+            onOpenRadar={() => setRadarOpen(true)}
           />
         )}
 
@@ -490,6 +499,23 @@ export default function App() {
         onActionClick={handleChatActionClick}
       />
 
+      {/* Geo-Spatial Location Radar Modal */}
+      <LocationRadarModal
+        isOpen={radarOpen}
+        onClose={() => setRadarOpen(false)}
+        onSelectHospital={(hItem) => {
+          const numericId = parseInt(hItem.id.replace('hosp-', ''), 10);
+          if (!isNaN(numericId)) {
+            setSelectedHospitalId(numericId);
+            setSelectedHospitalName(hItem.name);
+            setCurrentScreen('profile');
+          } else {
+            setCondition('General Checkup');
+            setCity(hItem.city);
+            setCurrentScreen('home');
+          }
+        }}
+      />
     </div>
   );
 }

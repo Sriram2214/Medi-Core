@@ -37,7 +37,8 @@ export default function Home({
   setBudget,
   onSearch,
   onEmergencyToggle,
-  onExploreFacilities
+  onExploreFacilities,
+  onOpenRadar
 }) {
   return (
     <div className="home-container">
@@ -208,21 +209,77 @@ export default function Home({
                 </div>
               </div>
 
-              {/* Discover AI Button */}
-              <button
-                type="button"
-                onClick={() => {
-                  setIsSearchOpen(false);
-                  onSearch();
-                }}
-                className="btn-discover-ai"
-              >
-                <Sparkles size={22} /> Discover AI-Ranked Hospitals <ArrowRight size={22} />
-              </button>
+              {/* Discover AI & GPS Radar Buttons */}
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsSearchOpen(false);
+                    onOpenRadar && onOpenRadar();
+                  }}
+                  className="btn-discover-ai"
+                  style={{ background: 'linear-gradient(135deg, #0ea5e9, #10b981)', flex: '1 1 240px' }}
+                >
+                  📍 Launch GPS Radar (Near Me)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsSearchOpen(false);
+                    onSearch();
+                  }}
+                  className="btn-discover-ai"
+                  style={{ flex: '2 1 320px' }}
+                >
+                  <Sparkles size={22} /> Discover AI-Ranked Hospitals <ArrowRight size={22} />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       )}
+
+      {/* GPS Geo-Spatial Location Radar Banner */}
+      <div className="emergency-banner" style={{ background: 'linear-gradient(135deg, #0f172a, #1e293b)', border: '2px solid #0ea5e9', marginBottom: '1.5rem', boxShadow: '0 12px 30px rgba(14, 165, 233, 0.25)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+          <div style={{
+            backgroundColor: 'rgba(14, 165, 233, 0.25)',
+            padding: '1rem',
+            borderRadius: '50%',
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#0ea5e9'
+          }} className="pulse">
+            <MapPin size={36} />
+          </div>
+          <div>
+            <h3 className="emergency-title" style={{ color: '#ffffff' }}><MapPin size={24} style={{ color: '#0ea5e9' }} /> Geo-Spatial GPS Distance Radar</h3>
+            <p style={{ fontSize: '0.95rem', maxWidth: '650px', color: '#cbd5e1', lineHeight: '1.6', margin: 0 }}>
+              Turn on your device location or select a preset to discover all Hospitals, Medical Stores, Scan Centres, and Diagnostic Labs within your custom radius range (1 km to 50 km).
+            </p>
+          </div>
+        </div>
+        <button
+          type="button"
+          onClick={() => onOpenRadar && onOpenRadar()}
+          className="btn"
+          style={{
+            background: 'linear-gradient(135deg, #0ea5e9, #10b981)',
+            color: '#FFFFFF',
+            padding: '1.1rem 2.2rem',
+            fontWeight: '800',
+            fontSize: '1.05rem',
+            borderRadius: '16px',
+            border: 'none',
+            boxShadow: '0 8px 20px rgba(14, 165, 233, 0.4)',
+            cursor: 'pointer',
+            whiteSpace: 'nowrap'
+          }}
+        >
+          📍 Launch GPS Radar ➔
+        </button>
+      </div>
 
       {/* Emergency Quick access Banner */}
       <div className="emergency-banner">

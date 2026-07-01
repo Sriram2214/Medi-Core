@@ -156,6 +156,9 @@ class SearchRequest(BaseModel):
     insurance_provider: Optional[str] = None
     priority: str = "quality" # quality, affordability, proximity, emergency
     age_group: str = "adult" # child, adult, elderly
+    user_lat: Optional[float] = None
+    user_lng: Optional[float] = None
+    max_distance_km: Optional[float] = None
 
 class TqiBreakdown(BaseModel):
     specialist: float
@@ -206,3 +209,33 @@ class AnalyticsResponse(BaseModel):
     top_searches: List[Dict[str, int]]
     city_distribution: Dict[str, int]
     treatment_costs: List[Dict[str, float]]
+
+
+# Geo-Spatial Location Radar Schemas
+class NearbyRequest(BaseModel):
+    lat: float
+    lng: float
+    radius_km: float = 15.0
+    category_filter: Optional[str] = "all" # all, hospital, scan, lab, pharmacy
+
+class NearbyFacilityResponseItem(BaseModel):
+    id: str
+    name: str
+    category: str # "Hospital", "Scan Centre", "Diagnostic Lab", "Pharmacy"
+    type: str
+    city: str
+    address: str
+    phone: str
+    website: Optional[str] = None
+    distance_km: float
+    lat: float
+    lng: float
+    emergency_available: bool = False
+
+class NearbyResponse(BaseModel):
+    total_found: int
+    user_lat: float
+    user_lng: float
+    radius_km: float
+    facilities: List[NearbyFacilityResponseItem]
+
