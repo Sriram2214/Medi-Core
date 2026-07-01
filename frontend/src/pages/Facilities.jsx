@@ -1,7 +1,33 @@
-import React from 'react';
-import { Shield, Users, Activity, Heart, Stethoscope, Building2, MapPin, Award, CheckCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Shield, Users, Activity, Heart, Stethoscope, Building2, MapPin, Award, CheckCircle, ExternalLink, Filter, Search } from 'lucide-react';
+import { TAMIL_NADU_DISTRICTS } from '../data/districts';
+import './Facilities.css';
 
 export default function Facilities() {
+  const [selectedDistrict, setSelectedDistrict] = useState('Perambalur');
+  const [activeCategory, setActiveCategory] = useState('hospitals'); // hospitals, scanCentres, labs, pharmacies
+
+  // Find district data
+  const currentDistrictData = TAMIL_NADU_DISTRICTS.find(d => d.name === selectedDistrict) || TAMIL_NADU_DISTRICTS[0];
+  const facilitiesData = currentDistrictData.facilities || {
+    hospitals: (currentDistrictData.hospitals || []).map(h => ({ name: h, website: null, type: 'Private / Govt' })),
+    scanCentres: [],
+    labs: [],
+    pharmacies: []
+  };
+
+  const getActiveList = () => {
+    switch (activeCategory) {
+      case 'hospitals': return facilitiesData.hospitals || [];
+      case 'scanCentres': return facilitiesData.scanCentres || [];
+      case 'labs': return facilitiesData.labs || [];
+      case 'pharmacies': return facilitiesData.pharmacies || [];
+      default: return [];
+    }
+  };
+
+  const activeList = getActiveList();
+
   const hospitals = [
     { 
       name: 'All India Institute of Medical Sciences (AIIMS)', 
@@ -85,7 +111,7 @@ export default function Facilities() {
   const marqueeContent = [...doctors, ...doctors]; // Duplicate for seamless looping
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem', padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
+    <div className="facilities-container">
       
       {/* Top Section: Explanation & Doctors Marquee */}
       <section style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -98,60 +124,59 @@ export default function Facilities() {
             overflow: hidden;
             white-space: nowrap;
             width: 100%;
-            padding: 2rem 0;
-            border-radius: 12px;
-            margin-top: 1rem;
-            display: flex;
-            align-items: center;
+            position: relative;
+            padding: 1rem 0;
           }
-          .marquee-track {
-            display: flex;
+          .marquee-content {
+            display: inline-flex;
             gap: 2.5rem;
-            animation: marquee 25s linear infinite;
-            width: max-content;
+            animation: marquee 35s linear infinite;
           }
-          .marquee-track:hover {
+          .marquee-container:hover .marquee-content {
             animation-play-state: paused;
           }
           .doctor-card {
-            display: inline-flex;
+            display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            padding: 1rem;
-            min-width: 150px;
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            transition: transform 0.3s;
-            cursor: pointer;
+            gap: 0.8rem;
+            background: var(--white);
+            padding: 1.2rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            width: 200px;
+            white-space: normal;
           }
           .doctor-card:hover {
-            transform: translateY(-8px) scale(1.05);
+            transform: translateY(-5px);
+            border-color: var(--primary-teal);
           }
         `}</style>
 
-        <div className="glass-panel" style={{ padding: '3rem', backgroundColor: 'var(--bg-blue-gray)', borderRadius: '16px', overflow: 'hidden' }}>
-          <h1 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <Stethoscope style={{ color: 'var(--primary-teal)' }} size={40} />
-            Our Elite Medical Experts
+        <div className="glass-panel" style={{ padding: '2.5rem', textAlign: 'center', maxWidth: '850px', margin: '0 auto', boxShadow: 'var(--shadow-md)' }}>
+          <h1 style={{ fontSize: '2.4rem', color: 'var(--text-dark)', marginBottom: '1rem', fontFamily: 'var(--font-heading)', fontWeight: '800' }}>
+            Empowering Tamil Nadu with Verified Healthcare Facilities
           </h1>
-          <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '2rem' }}>
-            At MediCore, we bring together the brightest minds in medicine. This esteemed panel features pioneers like <strong>Dr. Devi Shetty</strong>, <strong>Dr. Naresh Trehan</strong>, and <strong>Dr. Prathap C. Reddy</strong>. 
-            These visionaries have shaped modern Indian healthcare, specializing in complex cardiac surgeries, neurosurgery, orthopedics, and oncology. 
-            By choosing MediCore, you are placing your trust in decades of unparalleled expertise, ensuring that you receive the highest standard of personalized medical care.
+          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.7' }}>
+            Explore our comprehensive district-wise network of hospitals, scan centres, diagnostic laboratories, and pharmacies. Every healthcare provider is indexed to ensure you get immediate access to critical care, specialized treatments, and essential medical supplies.
           </p>
+        </div>
 
-          {/* Seamless Looping Marquee */}
+        {/* Endless Doctor Avatar Marquee */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', color: 'var(--text-muted)', fontWeight: '600', fontSize: '0.95rem' }}>
+            <Users size={18} style={{ color: 'var(--primary-teal)' }} /> Our Network Features Over 500+ Top Specialists across South India
+          </div>
+          
           <div className="marquee-container">
-            <div className="marquee-track">
+            <div className="marquee-content">
               {marqueeContent.map((doc, idx) => (
                 <div key={idx} className="doctor-card">
-                  {/* Individual Doctor Image */}
                   <div style={{
-                    width: '120px',
-                    height: '120px',
+                    width: '110px',
+                    height: '110px',
                     borderRadius: '50%',
                     backgroundImage: `url(${doc.img})`,
                     backgroundSize: 'cover',
@@ -160,8 +185,8 @@ export default function Facilities() {
                     border: '3px solid var(--white)'
                   }}></div>
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                    <span style={{ fontWeight: '800', color: 'var(--text-dark)', fontSize: '1.05rem', whiteSpace: 'normal' }}>{doc.name}</span>
-                    <span style={{ color: 'var(--primary-teal)', fontSize: '0.85rem', fontWeight: '700', marginTop: '0.2rem' }}>{doc.spec}</span>
+                    <span style={{ fontWeight: '800', color: 'var(--text-dark)', fontSize: '1rem' }}>{doc.name}</span>
+                    <span style={{ color: 'var(--primary-teal)', fontSize: '0.82rem', fontWeight: '700', marginTop: '0.2rem' }}>{doc.spec}</span>
                   </div>
                 </div>
               ))}
@@ -170,11 +195,118 @@ export default function Facilities() {
         </div>
       </section>
 
+      {/* NEW: District-Wise Healthcare Directory Section */}
+      <section className="district-directory-section">
+        <div className="directory-header">
+          <div className="directory-title-area">
+            <h2 className="directory-title">
+              <Building2 size={28} style={{ color: 'var(--primary-teal)' }} /> District Healthcare Directory
+            </h2>
+            <p className="directory-subtitle">
+              Browse hospitals, scan centres, pathology labs, and medical stores across Tamil Nadu districts.
+            </p>
+          </div>
+          
+          <div className="district-selector-wrapper">
+            <MapPin size={20} style={{ color: 'var(--primary-teal)' }} />
+            <select
+              value={selectedDistrict}
+              onChange={(e) => setSelectedDistrict(e.target.value)}
+              className="district-select-input"
+            >
+              {TAMIL_NADU_DISTRICTS.map((d, idx) => (
+                <option key={idx} value={d.name}>{d.name} District</option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/* Category Tabs */}
+        <div className="facility-category-tabs">
+          <button
+            type="button"
+            onClick={() => setActiveCategory('hospitals')}
+            className={`category-tab-btn ${activeCategory === 'hospitals' ? 'active' : ''}`}
+          >
+            🏥 Hospitals ({facilitiesData.hospitals?.length || 0})
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveCategory('scanCentres')}
+            className={`category-tab-btn ${activeCategory === 'scanCentres' ? 'active' : ''}`}
+          >
+            🔬 Scan Centres ({facilitiesData.scanCentres?.length || 0})
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveCategory('labs')}
+            className={`category-tab-btn ${activeCategory === 'labs' ? 'active' : ''}`}
+          >
+            🧪 Diagnostic Labs ({facilitiesData.labs?.length || 0})
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveCategory('pharmacies')}
+            className={`category-tab-btn ${activeCategory === 'pharmacies' ? 'active' : ''}`}
+          >
+            💊 Pharmacies ({facilitiesData.pharmacies?.length || 0})
+          </button>
+        </div>
+
+        {/* Facilities Grid */}
+        {activeList.length > 0 ? (
+          <div className="facilities-grid">
+            {activeList.map((fac, idx) => (
+              <div key={idx} className="facility-card animate-fadeIn">
+                <div className="facility-top">
+                  <h3 className="facility-name">{fac.name}</h3>
+                  {fac.type && (
+                    <span className={`facility-type-badge ${fac.type === 'Govt' ? 'badge-govt' : 'badge-private'}`}>
+                      {fac.type}
+                    </span>
+                  )}
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-muted)', fontSize: '0.88rem', fontWeight: '600' }}>
+                  <MapPin size={16} style={{ color: 'var(--primary-teal)' }} /> {selectedDistrict}, Tamil Nadu
+                </div>
+
+                <div className="facility-footer">
+                  {fac.website ? (
+                    <a
+                      href={fac.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-visit-website"
+                    >
+                      🌐 Visit Official Website <ExternalLink size={14} />
+                    </a>
+                  ) : (
+                    <span className="facility-status-text">
+                      ℹ️ Official website not publicly listed
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="empty-directory-note">
+            <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: 'inherit' }}>
+              Detailed {activeCategory} list for {selectedDistrict} will be available soon!
+            </h3>
+            <p style={{ margin: 0, opacity: 0.8 }}>
+              We are continuously verifying and indexing healthcare centers district by district across Tamil Nadu.
+            </p>
+          </div>
+        )}
+      </section>
+
       {/* Hospitals Section with Details and Images */}
       <section>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '3rem' }}>
           <div style={{ height: '2px', background: 'var(--primary-teal)', width: '60px' }}></div>
-          <h2 style={{ fontSize: '2rem', color: 'var(--text-dark)', textTransform: 'uppercase', letterSpacing: '1px' }}>Top Medical Hospitals in India</h2>
+          <h2 style={{ fontSize: '2rem', color: 'var(--text-dark)', textTransform: 'uppercase', letterSpacing: '1px' }}>Top Quaternary Medical Institutes in India</h2>
           <div style={{ height: '2px', background: 'var(--primary-teal)', width: '60px' }}></div>
         </div>
         
@@ -201,7 +333,6 @@ export default function Facilities() {
                 e.currentTarget.style.transform = 'scale(1) rotateY(0deg) translateZ(0)';
                 e.currentTarget.style.boxShadow = 'var(--shadow-md)';
               }}>
-                {/* Hospital Image */}
                 <div style={{ flex: '0 0 400px', height: '280px' }}>
                   <img 
                     src={hosp.img} 
@@ -210,7 +341,6 @@ export default function Facilities() {
                   />
                 </div>
                 
-                {/* Hospital Details */}
                 <div style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
                   <h3 style={{ fontSize: '1.8rem', marginBottom: '0.8rem', color: 'var(--text-dark)', fontWeight: '800' }}>
                     {hosp.name}

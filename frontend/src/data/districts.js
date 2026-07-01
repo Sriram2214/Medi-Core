@@ -17,7 +17,49 @@ export const TAMIL_NADU_DISTRICTS = [
   { name: 'Nagapattinam', hospitals: ['Nagapattinam GH', 'Port Clinic'] },
   { name: 'Namakkal', hospitals: ['Namakkal GH', 'Thangam Hospital'] },
   { name: 'Nilgiris', hospitals: ['Ooty GH', 'Coonoor Medical Center'] },
-  { name: 'Perambalur', hospitals: ['Perambalur GH', 'Roever Hospital'] },
+  { 
+    name: 'Perambalur', 
+    hospitals: [
+      'Harshithaa Hospital',
+      'Dhanalakshmi Srinivasan Urban Hospital',
+      'Arputhaa Medical Care Hospital',
+      'Amma Hospital',
+      'Lakshmi Hospital',
+      'PRIYAM Hospital',
+      'SKS Hospital',
+      'Govt Headquarter Hospital Perambalur',
+      'Roever Hospital'
+    ],
+    facilities: {
+      hospitals: [
+        { name: 'Harshithaa Hospital', website: 'https://www.harshithaahospital.com', type: 'Private' },
+        { name: 'Dhanalakshmi Srinivasan Urban Hospital', website: null, type: 'Private' },
+        { name: 'Arputhaa Medical Care Hospital', website: null, type: 'Private' },
+        { name: 'Amma Hospital', website: null, type: 'Private' },
+        { name: 'Lakshmi Hospital', website: null, type: 'Private' },
+        { name: 'PRIYAM Hospital', website: null, type: 'Private' },
+        { name: 'SKS Hospital', website: null, type: 'Private' },
+        { name: 'Govt Headquarter Hospital Perambalur', website: null, type: 'Govt' },
+        { name: 'Roever Hospital', website: null, type: 'Private' }
+      ],
+      scanCentres: [
+        { name: 'KYPROS Scan Centre', website: 'https://kyprosscan.com' },
+        { name: 'Perambalur Scan Centre', website: null },
+        { name: 'Medall Diagnostics', website: 'https://www.medall.in' },
+        { name: 'Pixel Scans', website: null }
+      ],
+      labs: [
+        { name: 'Sri Sai Diagnostics', website: 'https://srisaidiagnostics.com' },
+        { name: 'Raja Hitech Diagnostic Lab', website: null }
+      ],
+      pharmacies: [
+        { name: 'Thulasi Pharmacy', website: null },
+        { name: 'MedPlus', website: 'https://www.medplusmart.com' },
+        { name: 'Bawa Medicals', website: null },
+        { name: 'Bharath Medical', website: null }
+      ]
+    }
+  },
   { name: 'Pudukkottai', hospitals: ['Pudukkottai Medical College', 'Muthu Hospital'] },
   { name: 'Ramanathapuram', hospitals: ['Ramanathapuram GH', 'Syed Ammal Trust'] },
   { name: 'Ranipet', hospitals: ['Ranipet GH', 'Scudder Memorial'] },

@@ -140,7 +140,14 @@ CITIES_DATA = {
     "Perambalur": {
         "hospitals": [
             ("Govt Headquarter Hospital Perambalur", "govt", "Elambalur Road", "04328-224322", "Elambalur Rd"),
-            ("Dhanalakshmi Srinivasan Medical College Hospital", "private", "Siruvachur", "04328-254500", "Siruvachur")
+            ("Dhanalakshmi Srinivasan Urban Hospital", "private", "Siruvachur", "04328-254500", "Siruvachur"),
+            ("Harshithaa Hospital", "private", "Thuraimangalam", "04328-221122", "Thuraimangalam"),
+            ("Arputhaa Medical Care Hospital", "private", "Four Roads", "04328-223344", "Four Roads"),
+            ("Amma Hospital", "private", "New MG Road", "04328-225566", "MG Road"),
+            ("Lakshmi Hospital", "private", "North Madavi Road", "04328-227788", "Madavi Rd"),
+            ("PRIYAM Hospital", "private", "Trichy-Chennai Bypass", "04328-228899", "Bypass Rd"),
+            ("SKS Hospital", "private", "Old Bus Stand Road", "04328-229900", "Bus Stand Rd"),
+            ("Roever Hospital", "private", "Roever Campus, Elambalur", "04328-230011", "Roever Campus")
         ],
         "coords": (11.2342, 78.8821)
     },

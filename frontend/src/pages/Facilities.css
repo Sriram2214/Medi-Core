@@ -1,0 +1,243 @@
+/* Facilities.css - Tamil Nadu District Healthcare Directory */
+
+.facilities-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* District Directory Section */
+.district-directory-section {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border: 2px solid var(--border-color);
+  border-radius: 28px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dark .district-directory-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-color: #334155;
+}
+
+.directory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.directory-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.directory-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.directory-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.district-selector-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f1f5f9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 16px;
+  border: 2px solid #cbd5e1;
+}
+
+.dark .district-selector-wrapper {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+.district-select-input {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-teal);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-right: 0.5rem;
+}
+
+.dark .district-select-input {
+  color: #38bdf8;
+}
+
+/* Category Tabs */
+.facility-category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.category-tab-btn {
+  padding: 0.75rem 1.4rem;
+  border-radius: 16px;
+  border: 2px solid var(--border-color);
+  background: #ffffff;
+  color: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.dark .category-tab-btn {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.category-tab-btn:hover {
+  border-color: var(--primary-teal);
+  color: var(--primary-teal);
+  transform: translateY(-2px);
+}
+
+.category-tab-btn.active {
+  background: linear-gradient(135deg, var(--primary-teal), var(--primary-teal-light));
+  color: #ffffff;
+  border-color: var(--primary-teal);
+  box-shadow: 0 6px 20px rgba(15, 107, 107, 0.3);
+}
+
+/* Facilities Cards Grid */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.facility-card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.dark .facility-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+  border-color: #0ea5e9;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.facility-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.facility-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: inherit;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.facility-type-badge {
+  padding: 0.25rem 0.65rem;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.badge-private { background: #e0f2fe; color: #0369a1; }
+.badge-govt { background: #dcfce7; color: #15803d; }
+.badge-default { background: #f1f5f9; color: #475569; }
+
+.dark .badge-private { background: rgba(14, 165, 233, 0.2); color: #38bdf8; }
+.dark .badge-govt { background: rgba(22, 163, 74, 0.2); color: #4ade80; }
+.dark .badge-default { background: rgba(100, 116, 139, 0.2); color: #cbd5e1; }
+
+.facility-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 0.85rem;
+  margin-top: auto;
+}
+
+.facility-status-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.btn-visit-website {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #0ea5e9, #10b981);
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-visit-website:hover {
+  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.4);
+  transform: translateY(-1px);
+}
+
+.empty-directory-note {
+  padding: 3rem;
+  text-align: center;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 20px;
+  color: var(--text-muted);
+}
+
+.dark .empty-directory-note {
+  background: #0f172a;
+  border-color: #334155;
+}
