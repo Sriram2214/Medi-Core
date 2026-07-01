@@ -231,6 +231,10 @@ class NearbyFacilityResponseItem(BaseModel):
     lat: float
     lng: float
     emergency_available: bool = False
+    travel_time_car_mins: int = 5
+    travel_time_bike_mins: int = 3
+    google_maps_url: str = ""
+    google_directions_url: str = ""
 
 class NearbyResponse(BaseModel):
     total_found: int

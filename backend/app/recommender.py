@@ -314,7 +314,11 @@ EXTRA_FACILITIES = [
     
     # Coimbatore sample scan/labs/pharmacies (around 11.0168, 76.9558)
     {"id": "cbe-scan-1", "name": "KG Advanced Scan Centre", "category": "Scan Centre", "type": "Private", "city": "Coimbatore", "address": "Arts College Rd, Coimbatore", "phone": "0422-2212121", "website": None, "lat": 11.0180, "lng": 76.9580},
-    {"id": "cbe-pharm-1", "name": "Thulasi Pharmacy Coimbatore", "category": "Pharmacy", "type": "Private", "city": "Coimbatore", "address": "RS Puram, Coimbatore", "phone": "0422-2550000", "website": None, "lat": 11.0100, "lng": 76.9500}
+    {"id": "cbe-pharm-1", "name": "Thulasi Pharmacy Coimbatore", "category": "Pharmacy", "type": "Private", "city": "Coimbatore", "address": "RS Puram, Coimbatore", "phone": "0422-2550000", "website": None, "lat": 11.0100, "lng": 76.9500},
+    
+    # Salem & Madurai sample scan/labs/pharmacies
+    {"id": "slm-scan-1", "name": "Salem Diagnostic Scan Lab", "category": "Scan Centre", "type": "Private", "city": "Salem", "address": "Fairlands, Salem", "phone": "0427-2440000", "website": None, "lat": 11.6680, "lng": 78.1490},
+    {"id": "mdu-lab-1", "name": "Bose Diagnostic Lab Madurai", "category": "Diagnostic Lab", "type": "Private", "city": "Madurai", "address": "KK Nagar, Madurai", "phone": "0452-2530000", "website": None, "lat": 9.9300, "lng": 78.1250}
 ]
 
 def get_nearby_facilities(db: Session, req: schemas.NearbyRequest) -> schemas.NearbyResponse:
@@ -327,6 +331,11 @@ def get_nearby_facilities(db: Session, req: schemas.NearbyRequest) -> schemas.Ne
         for h in all_hosps:
             dist = calculate_haversine(req.lat, req.lng, h.lat, h.lng)
             if dist <= req.radius_km:
+                car_time = max(1, int(round(dist * 2.2 + 2)))
+                bike_time = max(1, int(round(dist * 1.7 + 1)))
+                maps_url = f"https://www.google.com/maps/search/?api=1&query={h.lat},{h.lng}"
+                dir_url = f"https://www.google.com/maps/dir/?api=1&origin={req.lat},{req.lng}&destination={h.lat},{h.lng}"
+                
                 facilities.append(schemas.NearbyFacilityResponseItem(
                     id=f"hosp-{h.id}",
                     name=h.name,
@@ -339,7 +348,11 @@ def get_nearby_facilities(db: Session, req: schemas.NearbyRequest) -> schemas.Ne
                     distance_km=dist,
                     lat=h.lat,
                     lng=h.lng,
-                    emergency_available=h.emergency_available
+                    emergency_available=h.emergency_available,
+                    travel_time_car_mins=car_time,
+                    travel_time_bike_mins=bike_time,
+                    google_maps_url=maps_url,
+                    google_directions_url=dir_url
                 ))
                 
     # 2. Search Extra Facilities (Scan Centres, Diagnostic Labs, Pharmacies)
@@ -348,6 +361,11 @@ def get_nearby_facilities(db: Session, req: schemas.NearbyRequest) -> schemas.Ne
             continue
         dist = calculate_haversine(req.lat, req.lng, f["lat"], f["lng"])
         if dist <= req.radius_km:
+            car_time = max(1, int(round(dist * 2.2 + 2)))
+            bike_time = max(1, int(round(dist * 1.7 + 1)))
+            maps_url = f"https://www.google.com/maps/search/?api=1&query={f['lat']},{f['lng']}"
+            dir_url = f"https://www.google.com/maps/dir/?api=1&origin={req.lat},{req.lng}&destination={f['lat']},{f['lng']}"
+            
             facilities.append(schemas.NearbyFacilityResponseItem(
                 id=f["id"],
                 name=f["name"],
@@ -360,7 +378,11 @@ def get_nearby_facilities(db: Session, req: schemas.NearbyRequest) -> schemas.Ne
                 distance_km=dist,
                 lat=f["lat"],
                 lng=f["lng"],
-                emergency_available=False
+                emergency_available=False,
+                travel_time_car_mins=car_time,
+                travel_time_bike_mins=bike_time,
+                google_maps_url=maps_url,
+                google_directions_url=dir_url
             ))
             
     # Sort all matching facilities by distance ascending (closest first)
@@ -373,4 +395,5 @@ def get_nearby_facilities(db: Session, req: schemas.NearbyRequest) -> schemas.Ne
         radius_km=req.radius_km,
         facilities=facilities
     )
+
 
