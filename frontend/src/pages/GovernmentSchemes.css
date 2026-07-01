@@ -1,4 +1,4 @@
-/* GovernmentSchemes.css - Ultra Vibrant & High Contrast Edition */
+/* GovernmentSchemes.css - Full Screen & Reviews Edition */
 
 .schemes-page {
   padding-bottom: 6rem;
@@ -139,7 +139,6 @@
   overflow: hidden;
 }
 
-/* Colorful Top Accent on Cards */
 .scheme-card::before {
   content: '';
   position: absolute;
@@ -187,6 +186,23 @@
 .dark .scheme-category-tag {
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.25), rgba(14, 165, 233, 0.15));
   color: #38bdf8;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+  color: #065f46;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.dark .verified-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
 }
 
 .scheme-year {
@@ -242,7 +258,7 @@
 
 .view-details-btn {
   padding: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   border-radius: 14px;
   text-align: center;
   font-weight: 600;
@@ -260,7 +276,7 @@
 
 .apply-btn {
   padding: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   border-radius: 14px;
   display: flex;
   justify-content: center;
@@ -279,41 +295,41 @@
   transform: translateY(-1px);
 }
 
-/* Modal Styling - HIGH CONTRAST & VIBRANT */
+/* WIDE / FULL SCREEN MODAL WITH REVIEWS */
 .scheme-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
   z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem;
   animation: fadeIn 0.3s ease;
 }
 
-.scheme-modal {
-  width: 100%;
-  max-width: 800px;
-  max-height: 90vh;
+.scheme-modal.wide-modal {
+  width: 96%;
+  max-width: 1250px;
+  max-height: 94vh;
   overflow-y: auto;
   background: #ffffff;
   color: #1e293b;
   border: 2px solid var(--border-color);
-  border-radius: 28px;
+  border-radius: 32px;
   padding: 2.5rem;
   position: relative;
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 70px -15px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
 }
 
-.dark .scheme-modal {
+.dark .scheme-modal.wide-modal {
   background: #0f172a;
   color: #f8fafc;
   border-color: #334155;
@@ -334,6 +350,7 @@
   color: inherit;
   cursor: pointer;
   transition: all 0.2s ease;
+  z-index: 10;
 }
 
 .dark .modal-close-btn {
@@ -349,38 +366,53 @@
 .modal-header {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 1.5rem;
-  padding-right: 2.5rem;
+  padding-right: 3rem;
 }
 
 .modal-badge-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
   margin-bottom: 0.85rem;
 }
 
 .modal-title {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   color: inherit;
   margin: 0;
   line-height: 1.35;
   font-weight: 800;
 }
 
-.modal-body {
+/* Two Column Layout inside Modal */
+.modal-content-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.modal-col-guidelines {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 1.3rem;
+}
+
+.modal-col-impact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .modal-section {
-  padding: 1.5rem;
+  padding: 1.4rem;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 18px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.6rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
@@ -391,7 +423,7 @@
 
 .modal-section h4 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: inherit;
   display: flex;
   align-items: center;
@@ -401,21 +433,19 @@
 
 .modal-section p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.98rem;
   line-height: 1.65;
   color: inherit;
   padding-left: 2rem;
   opacity: 0.95;
 }
 
-/* Colorful Sections in Modal */
 .highlight-box {
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.03));
   border-color: rgba(16, 185, 129, 0.4);
 }
 .dark .highlight-box {
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
-  border-color: rgba(16, 185, 129, 0.4);
 }
 
 .apply-step-box {
@@ -424,7 +454,6 @@
 }
 .dark .apply-step-box {
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(14, 165, 233, 0.05));
-  border-color: rgba(14, 165, 233, 0.4);
 }
 
 .helpline-box {
@@ -433,9 +462,212 @@
   border-color: rgba(245, 158, 11, 0.4);
   color: #d97706;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .dark .helpline-box {
   color: #fbbf24;
+}
+
+/* Impact Analytics Card */
+.impact-stats-card {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(15, 107, 107, 0.08), rgba(14, 165, 233, 0.04));
+  border: 1px solid rgba(15, 107, 107, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.dark .impact-stats-card {
+  background: linear-gradient(135deg, rgba(15, 107, 107, 0.18), rgba(14, 165, 233, 0.08));
+  border-color: rgba(15, 107, 107, 0.4);
+}
+
+.impact-card-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding-bottom: 0.75rem;
+}
+
+.dark .impact-card-title {
+  border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.stat-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-item strong {
+  font-size: 1.1rem;
+  color: inherit;
+  line-height: 1.2;
+}
+
+.stat-item span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Reviews Section inside Modal */
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reviews-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.reviews-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: inherit;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.review-card {
+  padding: 1.2rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: all 0.2s ease;
+}
+
+.dark .review-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: inherit;
+}
+
+.author-city {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.star-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.fill-gold {
+  fill: #f59e0b;
+  color: #f59e0b;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: inherit;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px dashed rgba(0,0,0,0.08);
+  padding-top: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.dark .review-footer {
+  border-top-color: rgba(255,255,255,0.1);
+}
+
+.verified-user {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #10b981;
+  font-weight: 600;
+}
+
+.sidebar-cta-box {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.sidebar-cta-box h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.sidebar-cta-box p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.full-width {
+  width: 100%;
+  justify-content: center;
 }
 
 .icon-gold { color: #f59e0b; }
@@ -471,6 +703,12 @@
   transform: translateY(-2px);
 }
 
+@media (max-width: 992px) {
+  .modal-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .schemes-grid {
     grid-template-columns: 1fr;
@@ -487,5 +725,9 @@
   .modal-apply-btn, .modal-footer .btn-secondary {
     width: 100%;
     justify-content: center;
+  }
+  
+  .scheme-modal.wide-modal {
+    padding: 1.5rem;
   }
 }
